@@ -1,0 +1,1 @@
+window.ova.num_slides=8;
