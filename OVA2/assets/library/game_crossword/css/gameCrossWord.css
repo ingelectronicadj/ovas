@@ -1,0 +1,185 @@
+.grid-row {
+    clear: left;
+}
+.grid-square {
+    position: relative;
+    height: 31px !important;
+    width: 31px !important;
+}
+.colored {
+    border-radius: 7px;
+    border: 2px solid #76ce76;
+}
+.word-label {
+    color: #34016d;
+    font-size: 18px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    line-height: 1;
+    pointer-events: none;
+    font-weight: bold;
+}
+.inputLetter {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    text-align: center;
+    font-size: 0.9em !important;
+    font-weight: 600;
+    border: 0;
+    padding: 0;
+    text-transform: uppercase;
+    border-radius: 0;
+    background: transparent !important;
+}
+/* .btn-reset {
+    background-color: cadetblue;
+} */
+.current-word {
+    background-color: #ffeaa7 !important;
+}
+
+.gird-square {
+    position: relative !important;
+}
+
+.clue-tooltip {
+    position: absolute;
+    z-index: 10;
+    background: #ffeaa7;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    transform: translateY(-100%);
+    max-width: 50vw;
+    border-radius: 5px;
+}
+.clue-tooltip-arrow {
+    display: block;
+    border: 8px solid transparent;
+    border-top-color: #ffeaa7;
+    border-bottom: none;
+    position: absolute;
+    top: 100%;
+}
+.clue-tooltipError {
+    position: absolute;
+    z-index: 10;
+    background: #ff7d6f;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    transform: translateY(-100%);
+    max-width: 50vw;
+    border-radius: 5px;
+    color: white;
+}
+.clue-tooltip-arrowError {
+    display: block;
+    border: 8px solid transparent;
+    border-top-color: #ff7d6f;
+    border-bottom: none;
+    position: absolute;
+    top: 36%;
+    left: -3%;
+    transform: rotate(90deg);
+}
+
+.inputError{
+    border: 2px solid #ff7d6f !important;
+}
+
+/* RESET */
+
+.gameCrossWord input[type='text'],
+.gameCrossWord select,
+.gameCrossWord textarea {
+    background-color: transparent !important;
+    margin: 0px !important;
+}
+
+.gameCrossWord input[type='text'],
+.gameCrossWord textarea {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.gameCrossWord input[type='text'],
+.gameCrossWord select,
+.gameCrossWord textarea {
+    background-color: transparent !important;
+}
+/* RESET */
+
+.gameCrossWord {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+}
+
+.gameCrossWord .crossWord {
+    margin-bottom: 1rem;
+    overflow: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .gameCrossWord .crossWord {
+        box-shadow: 0 0 0 1px #607d8b;
+    }
+}
+.gameCrossWord table.crossWord-grid {
+    margin: 1rem auto;
+    min-width: 550px;
+}
+.contentBtns {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.active {
+    background-color: #ffeaa7;
+}
+
+.hidden {
+    display: none;
+}
+p.titleClues {
+    color: #2c3e50;
+    font-weight: bold;
+}
+td.grid-square.colored.mal {
+    background-color: #e74c3c;
+    color: white !important;
+}
+td.grid-square.colored.mal input[type='text'] {
+    background-color: #e74c3c !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+td.grid-square.colored.bien input[type='text'] {
+    background-color: #2ecc71 !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+[data-direction='vertical'] {
+    top: -20px;
+    left: 7px;
+}
+
+[data-direction='horizontal'] {
+    left: -27px;
+    top: 7px;
+}
+
+/* .instruccionCrossword {
+    display: block !important;
+    order: 1;
+} */

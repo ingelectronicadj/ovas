@@ -1,0 +1,384 @@
+.c-game {
+    --aspect16-9: 0.625;
+    --max_width: 100%;
+    --zIndex_scene: 1;
+    --zIndex_header: 2;
+    --zIndex_alert: 3;
+    --headerHeight: 6rem;
+    --text-color: #383838;
+    position: relative;
+    width: var(--max_width);
+    margin: auto;
+    font-size: 3.5vmin;
+    /* height: var(--aspect16-9); */
+    margin-bottom: 30px;
+    min-width: 594px;
+}
+
+@media screen and (min-width: 64rem) and (orientation: landscape) {
+    .c-game {
+        /* background-color: tomato; */
+        --max_width: 90%;
+    }
+}
+
+/* .c-game button {
+    width: 100%;
+    border: none;
+    padding-top: calc(var(--aspect16-9) * var(--max_width));
+    background-image: url(/assets/images/slider_0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+.c-game_init {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.c-game_init > img {
+    width: 100%;
+}
+.c-game_btnInit {
+    position: absolute;
+    bottom: 10%;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-game_btnInit button {
+    background-image: url('../../../../assets/images/btn_play.png');
+    background-size: 100%;
+    width: 307px;
+    height: 135px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+}
+
+.game-wordsCorrect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1;
+    color: var(--text-color);
+}
+
+.game-wordsCorrect ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+
+.game-wordsCorrect ul li {
+    width: 49%;
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 5px;
+    background: #112308;
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+    line-height: 2;
+}
+
+.c-game_instr {
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.c-game_instr p {
+    font-size: 20px;
+}
+
+.c-game button img {
+    width: 100%;
+}
+
+.c-game_field,
+.c-game_header,
+.c-game_alert,
+.c-game_scene {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.c-game_field {
+    position: relative;
+    top: 0;
+    height: 0;
+    padding-top: calc(var(--aspect16-9) * var(--max_width));
+    box-shadow: 0px 10px 15px 0px rgba(103, 101, 101, 0.5);
+    overflow: hidden;
+}
+
+.c-game_field[aria-hidden='true'] {
+    display: none;
+}
+
+.c-game_header {
+    top: 0;
+    z-index: var(--zIndex_header);
+    height: 20%;
+    max-height: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-game_header-block {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.c-game_info {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 1.2em;
+    padding-bottom: 0.5rem;
+}
+
+.c-game_alert {
+    top: 0;
+    z-index: var(--zIndex_alert);
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    display: none;
+}
+
+.c-game_scene {
+    bottom: 0;
+    z-index: var(--zIndex_scene);
+    height: 100%;
+}
+
+.c-game[game='hangman'] .game-hangman .c-game_header {
+    display: none;
+}
+
+.c-game[game='hangman'] .game-hangman_clue {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    color: var(--text-color);
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-hangman_clue h6 {
+    font-size: 1.5rem;
+}
+
+.c-game[game='hangman'] .game-hangman_clue audio {
+    width: 100%;
+    height: 1.3em;
+    margin: 0;
+    padding: 0;
+}
+
+.c-game[game='hangman'] .game-hangman_scene {
+    display: grid;
+    grid-template-columns: minmax(40%, 1fr) minmax(60%, 2fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    background-color: var(--theme-body-bg, transparent);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c-game[game='hangman'] .game-hangman_attempts {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+.c-game[game='hangman'] .game-hangman_attempts[attempts] {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+img#image-Avatar {
+    width: 63%;
+    margin: 10px auto;
+}
+
+.c-game[game='hangman'] .game-hangman_answerWaited {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-game[game='hangman'] .game-hangman_answerWaited-letter,
+.c-game[game='hangman'] .game-hangman_answerWaited-space {
+    width: 1.6em;
+    max-width: 6vmin;
+    line-height: 5vmin;
+    min-height: 1rem;
+    margin-left: 4px;
+    border: none;
+    overflow: hidden;
+    margin-bottom: 4px;
+    text-align: center;
+    vertical-align: text-top;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.c-game[game='hangman'] #image-Avatar {
+    display: none;
+}
+
+.c-game[game='hangman'] .game-hangman_answerWaited-letter {
+    color: var(--text-color);
+    box-shadow: 0 3px 0 0 #152b0a;
+    font-size: 1.5rem;
+}
+
+.c-game[game='hangman'] .game-hangman_answerWaited-space {
+    width: 0.9em;
+    margin: 0;
+}
+
+.c-game[game='hangman'] .game-hangman_keyboard {
+    grid-column: 2 / 3;
+    margin-top: 10px;
+}
+
+.c-game[game='hangman'] .game-hangman_keyboard-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-game[game='hangman'] .game-hangman_keyboard-key[type='button'] {
+    background: #112308;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.c-game[game='hangman'] .game-hangman_keyboard-key[type='button']:focus {
+    border: 4px solid yellow;
+}
+
+.c-game[game='hangman'] .game-hangman_keyboard-key[type='button'].is-good {
+    background-color: #66bb6a;
+    color: #00695c;
+    pointer-events: none;
+}
+
+.c-game[game='hangman'] .game-hangman_keyboard-key[type='button'].is-wrong {
+    background-color: #ef5350;
+    color: #bbbbbb;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 33rem) {
+    .c-game[game='hangman'] {
+        --aspect16-9: 0.925;
+        min-height: 25vh;
+    }
+
+    .c-game[game='hangman'] .game-hangman_scene {
+        grid-template-rows: 1fr 1fr 0.7fr;
+    }
+
+    .c-game[game='hangman'] .game-hangman_attempts {
+        grid-row: 1 / 3;
+    }
+
+    .c-game[game='hangman'] .game-hangman_answerWaited {
+        grid-column: 2 / 3;
+    }
+
+    .c-game[game='hangman'] .game-hangman_keyboard {
+        grid-column: 1 / 3;
+    }
+}
+
+.c-game_win[aria-hidden='true'] {
+    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.c-game_win img {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#btnNext {
+    position: absolute;
+    right: 1%;
+    color: #ffffff;
+    background: transparent;
+    font-size: 20px;
+    bottom: 1%;
+    z-index: 5;
+    background-color: #456b1c;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+#btnNext::before {
+    float: right;
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 1280px) {
+    .c-game[game='hangman'] .game-hangman_scene {
+        background-size: initial;
+        background-position: center bottom;
+    }
+    .c-game_btnInit {
+        bottom: 36%;
+    }
+    .c-game_instr {
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .game-wordsCorrect ul li {
+        font-size: 14px;
+    }
+    .c-game[game='hangman'] .game-hangman_answerWaited {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    .c-game[game='hangman'] .game-hangman_answerWaited-letter {
+        margin: 1px;
+        width: 1.4em;
+    }
+    .c-game[game='hangman'] .game-hangman_keyboard-key[type='button'] {
+        box-shadow: 0 0 0 1px #769635;
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+}

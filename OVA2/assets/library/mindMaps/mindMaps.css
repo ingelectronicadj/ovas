@@ -1,0 +1,181 @@
+.mind-map-container {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: blue;
+}
+.galeria {
+    display: flex;
+    width: 160px;
+    flex-direction: column;
+    background-color: #656565;
+    padding: 15px;
+}
+.galeria div {
+    cursor: pointer;
+    transition: all ease 500ms;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.galeria .caja:hover,
+.arrows div:hover {
+    filter: drop-shadow(0 0 3px white);
+}
+
+.galeria textarea {
+    pointer-events: none;
+}
+
+.flecha {
+    /* background-image: url(https://png.pngtree.com/png-vector/20190918/ourmid/pngtree-red-arrowhead-3534979-png-image_1739925.jpg); */
+    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    background-position: center;
+}
+.flecha_1 {
+    background-image: url(./imgs/arrow_1.png);
+}
+.flecha_2 {
+    background-image: url(./imgs/arrow_2.png);
+}
+.flecha_3 {
+    background-image: url(./imgs/arrow_3.png);
+}
+
+.flecha textarea {
+    display: none;
+}
+
+.contenedor {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    box-shadow: inset 0 0 20px -3px rgba(0, 0, 0, 0.3);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contenedor div {
+    position: absolute !important;
+}
+
+.caja {
+    border-radius: 15px;
+}
+
+.arrows {
+    flex-wrap: wrap;
+}
+
+.arrows div {
+    width: 50%;
+}
+.reversed {
+    transform: rotateY(180deg);
+}
+
+.contenedor div.hovered:after {
+    display: none;
+    cursor: pointer;
+    content: '+';
+    position: absolute;
+    right: -33px;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.titulo {
+    background-color: #f9d175;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.contenedor .titulo:before {
+    content: '';
+    position: absolute;
+    left: -59px;
+    top: 0;
+    border-left: 60px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 74px solid #f9d175;
+}
+
+.titulo,
+.caja {
+    padding: 5px;
+    height: 76px;
+}
+
+.titulo textarea,
+.caja textarea {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    resize: none;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    margin: 0;
+    color: inherit;
+}
+
+.caja.caja_1 {
+    background-color: #e13f7d;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+}
+.caja.caja_2 {
+    background-color: #1749a4;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+}
+.caja.caja_3 {
+    background-color: #78a010;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+}
+.mapsContainer {
+    height: 50px;
+    width: 100%;
+    background-color: #3e3b3b;
+    display: flex;
+}
+.mapsContainer img {
+    cursor: pointer;
+    object-fit: contain;
+    width: calc(100% / 7);
+}
+.mapsContainer img:hover {
+    cursor: pointer;
+    object-fit: contain;
+    width: calc(100% / 7);
+    filter: drop-shadow(0px 0px 3px white);
+}
+button#clean {
+    position: absolute;
+    right: 0;
+}

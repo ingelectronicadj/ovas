@@ -1,0 +1,18 @@
+.hidden {
+    display: none;
+}
+
+.GameboardCookies {
+    width: 500px;
+    height: 500px;
+    /* background-image: url(img/Fondo.jpg); */
+}
+.bien {
+    fill: green !important;
+    background-color: green !important;
+}
+
+.mal {
+    fill: red !important;
+    background-color: red !important;
+}

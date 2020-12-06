@@ -1,0 +1,117 @@
+.millionaire {
+    color: black;
+}
+.slideMillionaire {
+    background-image: url(../game_millionaire/images/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 60vh;
+    min-width: 700px;
+}
+.slideMillionaire .tabContent {
+    min-height: 488px;
+}
+.slideMillionaire .tabContent {
+    position: relative;
+}
+.descriptionQuestion,
+.home {
+    color: white;
+}
+.alertFeedback {
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 41px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.alertFeedback button {
+    display: none;
+}
+
+.containerHint {
+    color: rgb(65, 65, 65);
+}
+.helpHint {
+    background-image: url(../game_millionaire/images/pista.png);
+    border: none;
+    height: 85px;
+    width: 85px;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.help50 {
+    border: none;
+    height: 85px;
+    width: 85px;
+    background-color: transparent;
+    background-image: url(../game_millionaire/images/50_50.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blocked {
+    /* filter: brightness(0.6); */
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.containerQuestion {
+    width: 100%;
+    background: rgb(24, 24, 51);
+    border-radius: 10px;
+    border: 2px solid rgb(29, 112, 221);
+    color: white;
+    position: absolute;
+    padding: 20px;
+    top: 35%;
+}
+.home .containerQuestion {
+    top: 50%;
+}
+
+.options {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.responses {
+    background: rgb(24, 24, 51);
+    border-radius: 5px;
+    border: 2px solid rgb(29, 112, 221);
+    color: white;
+    width: 25%;
+    margin: 10px;
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.Correct {
+    color: white;
+    background: rgb(49, 134, 49);
+}
+.Incorrect {
+    color: white;
+    background: rgb(187, 68, 68);
+}
+.c-btn_default {
+    background: #ffe65e !important;
+    color: black !important;
+}
+@media screen and (max-width: 800px) {
+    .options {
+        bottom: -20px;
+    }
+}

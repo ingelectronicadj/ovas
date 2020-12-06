@@ -1,0 +1,101 @@
+.containerCompleteSentences {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+    font-size: 18px;
+}
+
+.fields {
+    border: 2px dashed rgb(102, 100, 100);
+    min-width: 100px;
+    height: 25px;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+    font-size: 18px;
+}
+
+.containerTexts {
+    overflow: auto;
+    flex-wrap: wrap;
+    /* width: 80%;
+    padding-right: 30px; */
+}
+
+.wordContainer {
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-height: 100%;
+}
+
+.words {
+    font-size: 15px;
+    display: flex;
+    cursor: pointer;
+    /* width: 100%; */
+    height: 24px;
+    background: var(--client-color);
+    border: 2px solid var(--client-color_dark);
+    color: black;
+    margin: 7px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.disable {
+    pointer-events: none;
+    height: 24px;
+    font-size: 18px;
+    background-color: #848484;
+    color: #c7c6c6;
+    border: none;
+    margin: 7px;
+}
+
+/* .words:focus {
+    border: 3px dashed rgb(20, 214, 182);
+} */
+
+.numberId {
+    /* color: red; */
+    font-size: 18px !important;
+    display: inline !important;
+    font-weight: bold;
+}
+
+.questions {
+    /* display: flex; */
+    margin-top: 20px;
+    line-height: 1.9rem;
+    text-align: justify;
+}
+
+.assigned {
+    pointer-events: none;
+    min-width: 100%;
+    height: 100%;
+    background: rgb(10, 89, 128);
+    color: white;
+    position: relative;
+    top: -3px;
+    left: 0;
+    border: none;
+    box-shadow: 0 0 0 2px rgb(10, 89, 128);
+    font-size: 18px;
+}
+
+.bien {
+    background: rgb(47, 173, 47);
+}
+
+.mal {
+    background: rgb(173, 47, 47);
+}
+.containerBtns {
+    display: flex;
+    justify-content: center;
+}
