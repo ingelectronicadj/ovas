@@ -1,0 +1,92 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[4].word
+
+block main
+    div(class="slide4")
+        +title('4', linkActive, 'slide4_1')
+        div(class="row-flex u-justify-center")
+            div(class="col xs12")
+                +slider("Sección")
+                    +slidertabContent()
+                        div(class="row-flex u-align-items-center")
+                            div(class="col xs12")
+                                +audio2("slide4_2")(class="centrado")
+                                span(class="c-content-video draggable-video" video-accesibility)
+                                    +video('slide4-accesibility_1_drag', '', 3)(aria-hidden="true" controls="true")
+                            div(class="col xs12")
+                                h6(class="ta-c mb30" tabindex="0") Oprima sobre la imagen para ver la definición.
+                            div(class="col xs12 sm4")
+                                p(tabindex="0") Una #[b reacción química ] es un proceso en el cual un conjunto de sustancias denominadas reactivos se transforma en nuevas sustancias denominadas productos; a través del rompimiento y formación de enlaces. La siguiente imagen representa una reacción química general.
+                            div(class="col xs12 sm8")
+                                button(class="openModal1 btn-transparent")
+                                    +image("slide4_1.png", "Representación general de una reacción química.","Imagen 2:")(tabindex="-1")
+                    +slidertabContent()(class="alcanos")
+                        div(class="row-flex u-align-items-center")
+                            div(class="col xs12")
+                                +audio2("slide4_3")(class="centrado")
+                                span(class="c-content-video draggable-video" video-accesibility)
+                                    +video('slide4-accesibility_2_drag', '', 4)(aria-hidden="true" controls="true")
+                                p(class="ta-c" tabindex="0") Las reacciones pueden ser de experimentación o formación:
+                                p(class="ta-c" tabindex="0") presione sobre cada imagen para ver un ejemplo.
+
+                        div(class="row-flex u-justify-center u-aling-content-center")
+                            div(class="col xs12 sm12 md6")
+                                button(class="openModal2 btn-transparent")
+                                    +image("slide4_2.png","Reacción de formación del alcano etano.","Imagen 3:")(tabindex="-1")
+                                p(tabindex="0") #[b Una reacción de formación ]se caracteriza porque permite obtener un grupo funcional orgánico específico.
+                            div(class="col xs12 sm12 md6")
+                                button(class="openModal3 btn-transparent")
+                                    +image("slide4_3.png", "Reacción de alcanos.","Imagen 4:")(class="imagenCuatro")
+                                p(tabindex="0") #[b Una reacción de experimentación ]se caracteriza porque la reacción se da a partir de un grupo funcional orgánico específico.
+                    +slidertabContent()
+                        div(class="row-flex u-align-items-center")
+                            div(class="col xs12")
+                                +audio2("slide4_4")(class="centrado")
+                                span(class="c-content-video draggable-video" video-accesibility)
+                                    +video('slide4-accesibility_3_drag', '', 5)(aria-hidden="true" controls="true")
+                            div(class="col xs12 contenedorDos")
+                                p(class="ta-c" tabindex="0") Ahora bien, vamos a explicar cómo se construyen o dibujan las estructuras químicas simples, y las reacciones químicas. Para ello, nos apoyaremos en el siguiente video explicativo:
+                                button(class="openModal4 centrado btnVerVideo") Ver Video
+
+
+            +modal("modal1","","","closeModal1")
+                div(class="row-flex")
+                    div(class="col xs12")
+                        p(tabindex="0") Los #[b reactivos] se encuentran al lado izquierdo de la flecha y los productos al lado derecho. En algunas ocasiones los reactivos también pueden estar encima de la flecha.
+
+            +modal("modal2","","","closeModal2")
+                div(class="row-flex")
+                    div(class="col xs12")
+                        p(tabindex="0") Por ejemplo, las reacciones de sustitución y eliminación son un ejemplo de ello. En este caso el yodo se sustituye por el grupo metilo (-CH#[sub 3]) para formar el alcano. Por lo cual, es una reacción para formar el grupo funcional alcano.
+
+            +modal("modal3","","","closeModal3")
+                div(class="row-flex")
+                    div(class="col xs12")
+                        p(tabindex="0") Por ejemplo, la reacción de adición del halógeno cloro (Cl#[sub 2]) al alcano etano permite obtener el halogenuro de alquilo. Por lo cual, a partir del grupo funcional alcano se puede obtener un halogenuro de alquilo llamado 1-cloro-etano.
+            +modal("modal4", "","","closeModal4")
+                div(class="row-flex")
+                    div(class="col xs12")
+                        +video("slide4_2", linkActive, 2)
+
+
+prepend _footer
+    -var prevPage = "03.slide.html"
+    -var nextPage = "05.slide.html"
+block script
+     link(rel="stylesheet", href="assets/library/slides/slides.css")
+     script(src="./assets/library/slides/slider.js")
+     script.
+         slider.initialize();
+         var  modal1 = new ovaDialog('modal1');
+         modal1.addEventListeners('.openModal1', '.closeModal1');
+
+         var modal2 = new ovaDialog('modal2');
+         modal2.addEventListeners('.openModal2', '.closeModal2');
+
+         var modal3 = new ovaDialog('modal3');
+         modal3.addEventListeners('.openModal3','.closeModal3');
+
+          var modal4 = new ovaDialog('modal4');
+         modal4.addEventListeners('.openModal4','.closeModal4');

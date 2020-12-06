@@ -1,0 +1,61 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[8].word
+
+block main
+    div(class="slide8")
+        +title('8', linkActive, 'slide8_1')
+        div(class="row-flex u-align-items-center")
+            div(class="col xs12")
+                +audio2("slide8_2")(class="centrado")
+                span(class="c-content-video draggable-video" video-accesibility)
+                    +video('slide8-accesibility_2_drag', '', 2)(aria-hidden="true" controls="true")
+                p(tabindex="0") Se llevan a cabo en compuestos insaturados; es decir, que presentan doble enlace -C=C-, triple enlace -C≡C- y de tipo carbonilo -C=O. Este tipo de enlace permite aceptar átomos o grupos adicionales sin sobrepasar la coordinación máxima de sus propios átomos.
+            div(class="col xs12 sm6")
+                button(class="openModal1 btn-transparent " aria-label="Imagen 11: Reacción general de adición. Presione para más información.")
+                    +image("slide8_1.png", "Reacción general de adición.","Imagen 11:")(tabindex="-1")
+            div(class="col xs12 sm6")
+                +accordion('accordionGroup')
+                    |
+                    +accordionHeader(1, 'Adición electrofílica o electrófila (E+)', true)
+                    |
+                    +accordionBody(1, true)
+                        div: p(tabindex="0") Los alquenos y alquinos experimentan este tipo de reacciones en el doble enlace -C=C- y triple enlace -C≡C-.
+                        button(class="c-btn_navigation btnImages openModal1 btn-outline-color" aria-label="Botón imagen, presione para más información") Imagen
+
+                    +accordionHeader(2, 'Adición nucleofílica o nucleófila (Nu-)' )
+                    |
+                    +accordionBody(2)
+                        div: p(tabindex="0") Los aldehídos y cetonas experimentan este tipo de reacción en el grupo carbonilo. Y el nucleófilo puede estar cargado negativamente o puede ser neutro, y de acuerdo a ello la reacción puede tener dos rutas, como lo muestra la siguiente imagen:
+                        button(class="c-btn_navigation btnImages openModal2 btn-outline-color" aria-label="Botón imagen, presione para más información") Imagen
+                p(tabindex="0") En el primer caso llevan a la formación de un alcohol cuando el nucleófilo tiene carga negativa; y en el segundo caso a un producto con doble enlace entre el carbono y el nucleófilo (-C=Nu).
+
+    +modal("modal1", "","","closeModal1")
+        div(class="row-flex u-align-items-center")
+            div(class="col xs12 sm6")
+                p(tabindex="0") Se pueden presentar reacciones de: Halogenación (X<sub>2</sub>)
+                p(tabindex="0") Hidrogenación (H<sub>2</sub>)
+                p(tabindex="0") Hidratación (H<sub>2</sub>O/H<sup>+</sup>)
+                p(tabindex="0") Hidrohalogenación (HX)
+            div(class="col xs12  sm6")
+                 +image("slide8_3.png","Ejemplos de reacciones de adición.", "Imagen 12:")
+            div(class="col xs12")
+                p(tabindex="0") Donde X representa los halógenos como cloro (Cl), bromo (Br), yodo (I), flúor (F).
+    +modal("modal2", "","","closeModal2")
+        div(class="row-flex u-aling-items-center")
+            div(class="col xs12")
+                +image("slide8_4.png","Rutas de reacción.", "Imagen 13:")
+
+prepend _footer
+    -var prevPage = "07.slide.html"
+    -var nextPage = "09.slide.html"
+block script
+    script.
+        ova.ui_accordion('#accordionGroup');
+        var dialogModal1 = new ovaDialog('modal1');
+        dialogModal1.addEventListeners('.openModal1','.closeModal1');
+
+        var dialogModal1 = new ovaDialog('modal2');
+        dialogModal1.addEventListeners('.openModal2','.closeModal2');
+

@@ -1,0 +1,17 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[3].word
+block main
+    +title('3', linkActive, 'slide3_1')
+    div(class="row slide3")
+        div(class="col-center xs12 md8")
+            +audio2('slide3_2')(class="centrado")
+            span(class="c-content-video draggable-video" video-accesibility)
+                +video('slide3-accesibility_2_drag', '', 3)(aria-hidden="true" controls="true")
+            .c-before
+                +video('slide3_2', linkActive, 2)
+
+prepend _footer
+    -var prevPage = "02.slide.html"
+    -var nextPage = "04.slide.html"

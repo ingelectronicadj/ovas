@@ -1,0 +1,12 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[0].word
+
+block main
+    +title(null, linkActive, 'index')
+    +fichaBg('index_2.png', 'index_1.png', 'Escuela de ciencias básicas,tecnología e ingeniería. Reacciones químicas: sustitución, eliminación y adición. Química Orgánica')
+
+prepend _footer
+    -var prevPage = ""
+    -var nextPage = "01.slide.html"

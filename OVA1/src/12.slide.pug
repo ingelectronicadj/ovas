@@ -1,0 +1,281 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[12].word
+
+block main
+    div(class="slide12")
+        +title('12', linkActive, 'slide12_1')
+        div(class="slide12")
+            div(class="row-flex")
+                div(class="col-center xs12")
+                    +slider()
+                        +slidertabContent()
+                            div(class="row-flex u-align-items-center u-justify-center")
+                                div(class="col-center xs12")
+                                    p(tabindex="0") En la reacción 2 encontrarán tres reactivos, para conocer qué tipo de reactivos son, debe seleccionar cada recipiente y leer la descripción.
+                                div(class="col xs8 contenedorSvg")
+                                    <svg class="contenidoSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+                                        <style> .st13{opacity:.5;fill:#fff}.st19{fill:none;stroke:#fff;stroke-width:.3002;stroke-miterlimit:10}.st20{fill:#fff}.st23{font-size:14px} </style>
+                                        <g id="Fondo">
+                                            <path fill="#fbf0e6" d="M0-.2h400v400H0z"/>
+                                            <path d="M0 201.7S61 76.8 200 76.8s200 125.4 200 125.4V-.2H0v201.9z" opacity=".1" fill="#515151"/>
+                                            <path fill="#232323" d="M0 181.8h400v218H0z"/>
+                                            <path fill="#a57e55" d="M.2 181.8h399.7v18H.2z"/>
+                                            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="193.143" y1="333.862" x2="232.359" y2="-160.466">
+                                            <stop offset=".005" stop-color="#fff" stop-opacity="0"/>
+                                            <stop offset=".091" stop-color="#f7f7f7" stop-opacity=".086"/>
+                                            <stop offset=".223" stop-color="#e1e1e1" stop-opacity=".218"/>
+                                            <stop offset=".385" stop-color="#bebebe" stop-opacity=".382"/>
+                                            <stop offset=".572" stop-color="#8c8c8c" stop-opacity=".569"/>
+                                            <stop offset=".778" stop-color="#4c4c4c" stop-opacity=".777"/>
+                                            <stop offset="1"/>
+                                            </linearGradient>
+                                            <path d="M.3 295S23 253.8 200 253.8 400 295 400 295v-95.2H0L.3 295z" opacity=".4" fill="url(#SVGID_1_)"/>
+                                            <g id="_x35__2_">
+                                            <g id="Base_1_">
+                                                <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="159.902" y1="48.218" x2="168.516" y2="118.681" gradientTransform="rotate(-100.696 321.789 63.711)">
+                                                <stop offset=".062" stop-color="#fff"/>
+                                                <stop offset=".237" stop-color="#ecf6f6"/>
+                                                <stop offset=".592" stop-color="#b9e0e0"/>
+                                                <stop offset="1" stop-color="#78c3c3"/>
+                                                </linearGradient>
+                                                <path d="M391.7 212.4c.2 1.3 0 2.7-.7 4-.8 1.4-2.2 2.4-3.8 2.7l-44.2 8.3.1.7c0 .2-.1.5-.3.5l-1.2.2c-.2 0-.5-.1-.5-.3l-2.4-12.6c0-.2.1-.5.3-.5l1.2-.2c.2 0 .5.1.5.3l.1.7 44.2-8.3c1.6-.3 3.3.1 4.6 1.1 1.1.8 1.8 2.1 2.1 3.4zm-49.5 15.4l-.1-.7c0-.2.1-.5.3-.5l44.6-8.4c1.4-.3 2.6-1.1 3.3-2.3 1.2-2.1.7-4.8-1.2-6.3-1.1-.9-2.5-1.2-3.9-.9l-44.6 8.4c-.2 0-.5-.1-.5-.3l-.1-.7-.4.1 2.2 11.8.4-.2z" fill="url(#SVGID_2_)"/>
+                                                <radialGradient id="SVGID_3_" cx="148.367" cy="49.863" r="74.818" gradientTransform="matrix(-.1852 -.9827 .9917 -.1869 314.81 392.42)" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#84cbcb" stop-opacity=".4"/>
+                                                <stop offset=".59" stop-color="#39dde1" stop-opacity=".589"/>
+                                                <stop offset=".905" stop-color="#16e5eb" stop-opacity=".69"/>
+                                                </radialGradient>
+                                                <path d="M389.3 209.3c2.1 1.6 2.7 4.6 1.3 6.8-.8 1.3-2.1 2.2-3.6 2.5l-45 8.5-1.9-10.3 45-8.5c1.5-.3 3 .1 4.2 1z" fill="url(#SVGID_3_)"/>
+                                                <radialGradient id="SVGID_4_" cx="159.018" cy="49.248" r="14.406" gradientTransform="rotate(-100.696 321.789 63.711)" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#84cbcb" stop-opacity=".4"/>
+                                                <stop offset=".59" stop-color="#39dde1" stop-opacity=".589"/>
+                                                <stop offset=".905" stop-color="#16e5eb" stop-opacity=".69"/>
+                                                </radialGradient>
+                                                <path fill="url(#SVGID_4_)" d="M340 216.1l2.2 11.7h-.4l-2.2-11.6z"/>
+                                                <circle class="st13" cx="370.9" cy="214.8" r=".7"/>
+                                                <circle class="st13" cx="377.5" cy="212.9" r=".6"/>
+                                                <circle class="st13" cx="370.1" cy="213.6" r=".3"/>
+                                                <circle class="st13" cx="375.2" cy="212.4" r=".3"/>
+                                                <circle class="st13" cx="379.3" cy="213.2" r=".2"/>
+                                                <circle class="st13" cx="375.6" cy="213.5" r=".2"/>
+                                                <circle class="st13" cx="372.7" cy="213.9" r=".6"/>
+                                                <circle class="st13" cx="368.3" cy="214.4" r=".4"/>
+                                                <radialGradient id="SVGID_7_" cx="148.367" cy="49.863" r="74.818" gradientTransform="matrix(-.1852 -.9827 .9917 -.1869 314.81 392.42)" gradientUnits="userSpaceOnUse">
+                                                <stop offset=".15" stop-color="#6baec4" stop-opacity="0"/>
+                                                <stop offset=".51" stop-color="#6ab0c6" stop-opacity=".423"/>
+                                                <stop offset=".708" stop-color="#66b8cc" stop-opacity=".656"/>
+                                                <stop offset=".865" stop-color="#5fc6d6" stop-opacity=".842"/>
+                                                <stop offset="1" stop-color="#55d9e5"/>
+                                                </radialGradient>
+                                                <path d="M389.3 209.3c2.1 1.6 2.7 4.6 1.3 6.8-.8 1.3-2.1 2.2-3.6 2.5l-45 8.5-1.9-10.3 45-8.5c1.5-.3 3 .1 4.2 1z" fill="url(#SVGID_7_)"/>
+                                                <radialGradient id="SVGID_8_" cx="158.993" cy="86.479" r="35.959" gradientTransform="rotate(-100.696 321.789 63.711)" gradientUnits="userSpaceOnUse">
+                                                <stop offset=".131" stop-color="#fff"/>
+                                                <stop offset=".239" stop-color="#fff" stop-opacity=".875"/>
+                                                <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                                                </radialGradient>
+                                                <path d="M373.5 220.1l12.9-2.4s4.2-.7 3.4-4.9-4.6-3.7-4.6-3.7l-13.4 2.5s14-2 14.7 1.9c.8 3.8-13 6.6-13 6.6z" opacity=".3" fill="url(#SVGID_8_)"/>
+                                                <path d="M389.3 209.3c2.1 1.6 2.7 4.6 1.3 6.8-.8 1.3-2.1 2.2-3.6 2.5l-45 8.5-1.9-10.3 45-8.5c1.5-.3 3 .1 4.2 1z" opacity=".15" fill="#fff"/>
+                                            </g>
+                                            <g id="Brillos_1_">
+                                                <radialGradient id="SVGID_9_" cx="168.074" cy="75.277" r="51.28" gradientTransform="rotate(-100.696 321.789 63.711)" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#fff"/>
+                                                <stop offset=".116" stop-color="#fff" stop-opacity=".884"/>
+                                                <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                                                </radialGradient>
+                                                <path d="M362.9 222.7l24.6-4.7s4.1-1.2 3.3-5.6c-.8-4.4-5.6-3.7-5.6-3.7l-24.3 4.6s15.7-2.3 16.5 1.7c.7 4-14.5 7.7-14.5 7.7z" fill="url(#SVGID_9_)"/>
+                                                <radialGradient id="SVGID_10_" cx="160.217" cy="69.045" r="20.644" gradientTransform="rotate(-100.696 321.789 63.711)" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#fff"/>
+                                                <stop offset=".141" stop-color="#fff" stop-opacity=".859"/>
+                                                <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                                                </radialGradient>
+                                                <path d="M344.3 224.5c4.1-.3 8.1-1.1 12.2-1.8.9-.2 1.8-.3 2.8-.5 3.1-.6 6.3-1.2 9.4-1.8.4-.1.8-.1 1-.4.3-.2.4-.7.2-1-.2-.2-.4-.2-.7-.3-3.9-.5-7.9.4-11.7 1.2-3.8.8-7.6 1.6-11.2 2.8-.5.1-.9.3-1.3.6s-.6.8-.5 1.3l1.8.3" fill="url(#SVGID_10_)"/>
+                                                <path class="st19" d="M347.1 224.8l-.7-3.7M354.3 223.5l-.7-3.8M361.5 222.1l-.7-3.8M368.7 220.7l-.7-3.7M375.9 219.4l-.7-3.8M383.1 218l-.7-3.7"/>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <a role="link" tabindex="0" xLink:href='#' class="openModal1 hover-button " aria-label="boton de la descripcion imperio egipcio. Acciona este botón consultar más información." animation="shake duration-2 delay-1.5">
+                                            <g id="Agua_1_">
+                                                <image width="196" height="233" xlink:href="./assets/images/Botella_Agua.png" transform="translate(11.982 232.554) scale(.3841)" overflow="visible"/>
+                                                <path class="st20" d="M78.9 357.6H33.6c-6.6 0-11.9-5.3-11.9-11.9 0-6.6 5.3-11.9 11.9-11.9h45.3c6.6 0 11.9 5.3 11.9 11.9 0 6.6-5.3 11.9-11.9 11.9z"/>
+                                                <text transform="translate(40.808 350.089)" class="st22 st23" fill="#0f7aa5"> Agua </text>
+                                            </g>
+                                        </a>
+                                        <a role="link" tabindex="0" xLink:href='#' class="openModal3 hover-button " aria-label="boton de la descripcion imperio egipcio. Acciona este botón consultar más información." animation="shake duration-2 delay-2">
+                                            <g id="Acido_sulfurico">
+                                                <image width="132" height="434" xlink:href="./assets/images/Botella_Acido.png" transform="matrix(.358 0 0 .358 134.646 126.653)" overflow="visible"/>
+                                                <path class="st20" d="M193.9 288.8h-68.1c-6.6 0-11.9-5.3-11.9-11.9 0-6.6 5.3-11.9 11.9-11.9h68.1c6.6 0 11.9 5.3 11.9 11.9 0 6.6-5.4 11.9-11.9 11.9z"/>
+                                                <text transform="translate(121.083 281.25)" class="st22" font-size="12" fill="#a58a47"> Ácido Sulfúrico </text>
+                                            </g>
+                                        </a>
+                                        <a role="link" tabindex="0" xLink:href='#' class="openModal2 hover-button " aria-label="boton de la descripcion imperio egipcio. Acciona este botón consultar más información." animation="shake duration-2 delay-2.5">
+                                            <g id="Cannabidol">
+                                                <image width="161" height="255" xlink:href="./assets/images/Botella_Cannabidol.png" transform="translate(232.62 200.564) scale(.3762)" overflow="visible"/>
+                                                <path class="st20" d="M290.3 335.5h-62.1c-6.6 0-11.9-5.3-11.9-11.9 0-6.6 5.3-11.9 11.9-11.9h62.1c6.6 0 11.9 5.3 11.9 11.9.1 6.6-5.3 11.9-11.9 11.9z"/>
+                                                <text transform="translate(225.43 327.951)" class="st22 st23" fill="#2fad21"> Cannabidol </text>
+                                            </g>
+                                        </a>
+                                        <a role="link" tabindex="0" xLink:href='#' class="openModal4 hover-button " aria-label="boton de la descripcion imperio egipcio. Acciona este botón consultar más información." animation="shake duration-2 delay-3">
+                                            <image width="192" height="623" xlink:href="./assets/images/Balon_Rojo.gif" transform="translate(274.634 30.84) scale(.3609)" overflow="visible" id="Balon_rojo"/>
+                                        </a>
+                                    </svg>
+                                    figure(class="c-figure"): figcaption(class="c-figure_caption").
+                                        #[span(class="c-figure_caption-title") Animación 16:] &nbsp
+                                        #[span(class="c-figure_caption-alt") Diferentes instrumentos de laboratorio  con elementos químicos.]
+                                div(class="col-center xs12")
+                                        p(tabindex="0") Una vez se conocen los reactivos, estos se mezclarán, y la mezcla se someterá a calentamiento en un reflujo durante 30 minutos con agitación constante.
+                                        p(tabindex="0") Para visualizar la ecuación química de la reacción seleccione el balón de reacción.
+                                        p(tabindex="0") Ahora, de acuerdo con la estructura química de los reactivos, responder las siguientes preguntas, las cuales son de selección múltiple con única respuesta:
+
+
+                        +slidertabContent()
+                            div(class="row-flex")
+                                div(class="col-center xs12 box-question")
+                                    h6(class="question" tabindex="0") Pregunta 1:
+                                    p.question(tabindex="0") La estructura química del Cannabidiol no presenta halógenos, de acuerdo con esto se puede afirmar:
+                                    div(class="answers")
+                                        .option(tabindex="0")
+                                            b(class ="js-checkBox") a.
+                                            +inputValidate('radio', 'id_1', 'name_1', 1)( class="js-input_validate checkBox js-check_b" data="La estructura química del Cannabidiol presenta grupos aromáticos que sufren reacciones de eliminación.") La estructura química del Cannabidiol presenta grupos aromáticos que sufren reacciones de eliminación.
+                                        .option(tabindex="0")
+                                            b(class ="js-checkBox") b.
+                                            +inputValidate('radio', 'id_2', 'name_1', 2)(class="js-input_validate checkBox js-check_b" data="Cuando tiene halógenos constituyen un halogenuro de alquilo los cuales pueden experimentar reacciones de adición.") Cuando tiene halógenos constituyen un halogenuro de alquilo los cuales pueden experimentar reacciones de adición.
+                                        .option(tabindex="0")
+                                            b(class ="js-checkBox") c.
+                                            +inputValidate('radio', 'id_3', 'name_1', 3)(class="js-input_validate checkBox js-check_b" data="No contiene un halogenuro de alquilo en su estructura química que permita dar paso a una reacción de eliminación o sustitución.") No contiene un halogenuro de alquilo en su estructura química que permita dar paso a una reacción de eliminación o sustitución.
+                                        .option(tabindex="0")
+                                            b(class ="js-checkBox") d.
+                                            +inputValidate('radio', 'id_4', 'name_1', 4)(class="js-input_validate checkBox js-check_b" data="Ninguna de las anteriores.") Ninguna de las anteriores.
+                        +slidertabContent()
+                            div(class="row-flex")
+                                div(class="col-center xs12 md10 box-question")
+                                    h6.question(tabindex="0") Pregunta 2:
+                                    p.question(tabindex="0") Las reacciones de reacciones de adición se dan en compuestos insaturados, como ejemplo de las reacciones de adición se tiene:
+                                    div(class="answers")
+                                        .option(tabindex="0")
+                                            b(class ="js-checkBox") a.
+                                            +inputValidate('radio', 'id_5', 'name_2', 1)( class="js-input_validate checkBox js-check_b" data="La estructura química del Cannabidiol presenta grupos aromáticos que sufren reacciones de eliminación.") La estructura química del Cannabidiol presenta grupos aromáticos que sufren reacciones de eliminación.
+                                        .option(tabindex="0")
+                                            b(class ="js-checkBox") b.
+                                            +inputValidate('radio', 'id_6', 'name_2', 2)(class="js-input_validate checkBox js-check_b" data="Cuando tiene halógenos constituyen un halogenuro de alquilo los cuales pueden experimentar reacciones de adición.") Cuando tiene halógenos constituyen un halogenuro de alquilo los cuales pueden experimentar reacciones de adición.
+
+                                        .option(tabindex="0")
+                                            b(class ="js-checkBox") c.
+                                            +inputValidate('radio', 'id_7', 'name_2', 3)(class="js-input_validate checkBox js-check_b" data="No contiene un halogenuro de alquilo en su estructura química que permita dar paso a una reacción de eliminación o sustitución.") No contiene un halogenuro de alquilo en su estructura química que permita dar paso a una reacción de eliminación o sustitución.
+
+                                        .option(tabindex="0")
+                                            b(class ="js-checkBox") d.
+                                            +inputValidate('radio', 'id_8', 'name_2', 4)(class="js-input_validate checkBox js-check_b" data="Ninguna de las anteriores.") Ninguna de las anteriores.
+                        +slidertabContent()
+                            div(class="row-flex")
+                                div(class="col-center xs12 md10 box-question")
+                                    h6.question(tabindex="0") Pregunta 3:
+                                    p.question(tabindex="0") Las reacciones de adición de tipo hidratación se caracterizan por:
+                                    div(class="answers")
+                                        .option(tabindex="0")
+                                            b(class ="js-checkBox") a.
+                                            +inputValidate('radio', 'id_9', 'name_3', 1)( class="js-input_validate checkBox js-check_b" data="Formar un alcohol por acción del agua en medio ácido.") Formar un alcohol por acción del agua en medio ácido.
+                                        .option(tabindex="0")
+                                            b(class ="js-checkBox") b.
+                                            +inputValidate('radio', 'id_10', 'name_3', 2)(class="js-input_validate checkBox js-check_b" data="Formar un alcóxido por acción del ácido en medio acuoso. ") Formar un alcóxido por acción del ácido en medio acuoso.
+                                        .option(tabindex="0")
+                                            b(class ="js-checkBox") c.
+                                            +inputValidate('radio', 'id_11', 'name_3', 3)(class="js-input_validate checkBox js-check_b" data="Formar un éter al reaccionar el agua con el ácido.") Formar un éter al reaccionar el agua con el ácido.
+                                        .option(tabindex="0")
+                                            b(class ="js-checkBox") d.
+                                            +inputValidate('radio', 'id_12', 'name_3', 4)(class="js-input_validate checkBox js-check_b" data="Ninguna de las anteriores. ") Ninguna de las anteriores.
+                        +slidertabContent()
+                            div(class="row-flex")
+                                div(class="col-center xs12 md10 box-question")
+                                    h6(tabindex="0") Pregunta 4:
+                                    p(tabindex="0") Teniendo en cuenta el tipo de reacción de adición, ¿cuál de las siguientes estructuras es el producto de esta reacción?
+                                    div(class="answers columns")
+                                        .option.img(tabindex="0")
+                                            b(class ="js-checkBox") a.
+                                            +inputValidateCheck('radio', 'id_13', 'name_4', 1, 'Opción A')( class="js-input_validate checkBox js-check_b" data="")
+                                                +image("slide12_5.png")(tabindex="-1")
+                                        .option.img(tabindex="0")
+                                            b(class ="js-checkBox") b.
+                                            +inputValidateCheck('radio', 'id_14', 'name_4', 2, 'Opción B')(class="js-input_validate checkBox js-check_b" data="")
+                                                +image("slide12_6.png")(tabindex="-1")
+                                        .option.img(tabindex="0")
+                                            b(class ="js-checkBox") c.
+                                            +inputValidateCheck('radio', 'id_15', 'name_4', 3, 'Opción C')(class="js-input_validate checkBox js-check_b" data="")
+                                                +image("slide12_7.png")(tabindex="-1")
+                                        .option.img(tabindex="0")
+                                            b(class ="js-checkBox") d.
+                                            +inputValidateCheck('radio', 'id_16', 'name_4', 4, 'Opción D')(class="js-input_validate checkBox js-check_b" data="")
+                                                +image("slide12_8.png")(tabindex="-1")
+
+
+
+                +modal("modal1", "","","closeModal1")
+                    div(class="row-flex")
+                        div(class="col-center xs12")
+                        p(class="centrado" tabindex="0") #[b Agua] tiene fórmula molecular H#[sub 2]O, es uno de los reactivos.
+                +modal("modal2", "","","closeModal2")
+                    div(class="row-flex u-justify-center")
+                        div(class="col-center xs12")
+                        p(tabindex="0") Este recipiente contiene el #[b Cannabidiol] , un compuesto natural que se extrae del cannabis y que presenta propiedades antiinflamatorias. Este compuesto experimentará una reacción que permita potencializar su actividad biológica. La estructura química de este compuesto se presenta a continuación:
+                        +image("slide12_2.png","Estructura del cannabidiol.","Imagen 15:")
+                +modal("modal3", "","","closeModal3")
+                    div(class="row-flex u-align-items-center")
+                        div(class="col-center xs12")
+                            p(tabindex="0") #[b Ácido sulfúrico] Es un ácido inorgánico fuerte y también es uno de los reactivos. Tiene fórmula molecular H#[sub 2]SO#[sub 4].
+                            p(tabindex="0") Una vez se conocen los reactivos, estos se mezclarán, y la mezcla se someterá a calentamiento en un reflujo durante 30 minutos con agitación constante.
+
+
+                +modal("modal4", "","","closeModal4")
+                    div(class="row-flex u-align-items-center")
+                        div(class="col xs12")
+                            +image("slide12_9.png","Ecuación química de la reacción.","Imagen 19:")
+
+
+
+
+prepend _footer
+    -var prevPage = "11.slide.html"
+    -var nextPage = "13.slide.html"
+block script
+    link(rel="stylesheet" href="assets/library/slides/slides.css")
+    script(src="./assets/library/slides/slider.js")
+    script(src="assets/library/feedback/feedback.js")
+    script.
+        const myCallback = (objData) => {
+            let currentSlide = objData.currentSlide;
+            feedback.initialize({
+                bien: [
+                    '',
+                    'Los  halogenuros  de  alquilo  no  experimentan  reacciones  de  adición,  por  ello  la  opción  b  es  incorrecta.  Y  los  compuestos aromáticos no sufren reacciones de eliminación, por lo cual la opción a no es correcta. Las reacciones de eliminación y sustitución se dan a partir de halogenuros de alquilo, mientras que las reacciones de adición se dan en compuestos insaturados. Por la tanto, la respuesta correcta es la c.',
+                    'Las  reacciones  mencionadas  son  características  de  reacciones  de  adición, en la primera se adicionan átomos de hidrógeno, formando un alcano; en la segunda un hidrógeno y un hidroxilo, formando un alcohol; y  en  la  tercera  un  hidrógeno  y  el  respectivo   halógeno,   formando   un  halogenuro  de  alquilo.  Por  lo  tanto,  la  opción  correcta  es  la  d.  Todas las anteriores.',
+                    'La   reacción   de   hidratación   de   alquenos   se   caracteriza   por   la   reacción entre agua en medio ácido formando el respectivo alcohol. No se forma un alcóxido o éter porque no hay presencia de algún alcohol. Por  lo  tanto,  la  respuesta  correcta  es el literal a.',
+                    'El   Cannabidiol   presenta   dos   alquenos   en   su  estructura,  los  cuales  pueden  sufrir  la  reacción  de  hidratación.  El  anillo  aromático  no  sufre  dicha  reacción  dado  que  perdería  su aromaticidad. La respuesta correcta es la cuarta estructura o letra d, dado que presenta dos alcoholes en los respectivos alquenos.'
+                ],
+                mal:[
+                    '',
+                    'Siga intentando.',
+                    'Siga intentando.',
+                    'Siga intentando.',
+                    'Siga intentando.'
+                ],
+                }, currentSlide);
+            const feedbBack = (respGame) => {
+                asnwerCorrect = document.getElementsByClassName('js-checkBox bien').length;
+                feedback.index = objData.index;
+                feedback.give(respGame.status);
+            }
+            ova.inputchecked(currentSlide, objData.index, ["",3,4,1,4], feedbBack);
+        };
+        var modal1 = new ovaDialog("modal1")
+        modal1.addEventListeners(".openModal1",".closeModal1");
+
+        var modal2 = new ovaDialog("modal2")
+        modal2.addEventListeners(".openModal2", ".closeModal2");
+
+        var modal3 = new ovaDialog("modal3")
+        modal3.addEventListeners(".openModal3",".closeModal3");
+
+        var modal4 = new ovaDialog("modal4")
+        modal4.addEventListeners(".openModal4",".closeModal4");
+
+        slider.initialize(myCallback);

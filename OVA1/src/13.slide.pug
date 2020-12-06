@@ -1,0 +1,26 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[13].word
+
+block main
+    div(class="slide13")
+        +title('13', linkActive, 'slide13_1')
+        div(class="row-flex u-align-items-center")
+            div(class="col xs12")
+                //- +audio2("slide13_2")(class="centrado")
+                //-     span(class="c-content-video draggable-video" video-accesibility)
+                //-         +video('slide13-accesibility_2_drag', '', 2)(aria-hidden="true" controls="true")
+            div(class="col xs12 sm4")
+                +image("slide13_1.gif","balones con líquidos de colores que se mueven simulando burbujeo.","Animación 17:")
+            div(class="col xs12 sm8")
+                p(tabindex="0") Las reacciones de sustitución y eliminación dependen de la naturaleza de los reactivos involucrados en la reacción y se dan a partir de halogenuros de alquilo; mientras que las reacciones de adición se dan en compuesto insaturados como alquenos, alquinos y grupo carbonilo.
+                p(tabindex="0") Las reacciones de sustitución SN1 se favorecen en sustratos terciarios y en presencia de solventes polares próticos. Mientras que las SN2 son reacciones concertadas que se favorecen en sustratos primarios y solventes polares apróticos.
+                p(tabindex="0") Las reacciones de eliminación se diferencian por el tipo y fuerza de la base presente en la reacción. Así, las reacciones E2 se favorecen sobre las E1 cuando la base es más fuerte y está en mayor concentración.
+
+
+
+prepend _footer
+    -var prevPage = "12.slide.html"
+    -var nextPage = ""
+

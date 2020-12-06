@@ -1,0 +1,269 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[9].word
+
+block main
+    div(class="slide9")
+        +title('9', linkActive, 'slide9_1')
+        div(class="row-flex")
+            div(class="col xs12")
+            +slider()
+                +slidertabContent
+                    div(class="row-flex")
+                        div(class="col xs12")
+                            +audio2("slide9_2")(class="centrado")
+                            span(class="c-content-video draggable-video" video-accesibility)
+                                +video('slide9-accesibility_2_drag', '', 2)(aria-hidden="true" controls="true")
+                            p(tabindex="0") Esta actividad consta de dos actividades, la primera es un apareamiento de conceptos y en la segunda deberá construir reacciones químicas a partir de los elementos dados.
+                        div(class="col xs12 sm6")
+                            +image("slide9_1.png","Actividad 1. Apareamiento","Imagen 14:")
+                            button(class=" centrado btnActividad btn-outline-color" id="slide2") Actividad 1. Apareamineto
+                        div(class="col xs12 sm6")
+                            +image("slide9_2.png","Actividad 2. Construya la reacción","Imagen 15:")
+                            button(class="centrado btnActividad btn-outline-color" id="slide3") Actividad 2. Construya la reacción
+                +slidertabContent
+                    div(class="row-flex u-align-items-center u-justify-center")
+                        div(class="col xs12")
+                            h6(class="ta-c" tabindex="0") Actividad 1. Apareamiento de conceptos
+                            p(class="ta-c" tabindex="0") De acuerdo con los conceptos estudiados a lo largo del contenido teórico, relacionar a través de un apareamiento los siguientes conceptos con sus definiciones:
+                        .row.gameJoinColumns(tabindex="0" role="application" title="Juego Unir columnas, Presione enter para entrar al juego, luego presione shift 'A' para conocer las instrucciones")
+                            div(class="col xs12 md10 flex u-justify-center game_join gameUnir" data-ejercicio="unir" id="game_unir_1" tabindex= "0" aria-label="Identificar la relación entre los conceptos y las definiciones para reafirmar los conocimientos adquiridos al navegar por el OVA. Para seleccionar un concepto o significado, presione la tecla: enter" )
+                                div(id="sourceElements" data-column="1" class="js-columnas game_join-options" tabindex="0" aria-label="Lista de 8 opciones columna 1")
+                                    span(id="Item0_0" class="treeItem primeraCol ta-c" onclick="joinGame.setSource(this)" valor="1" tabindex="0") Nucleófilo
+                                    span(id="Item0_1" class="treeItem primeraCol ta-c" onclick="joinGame.setSource(this)" valor="2" tabindex="0") Electrófilo
+                                    span(id="Item0_2" class="treeItem primeraCol ta-c" onclick="joinGame.setSource(this)" valor="3" tabindex="0") Reacción de adición
+                                    span(id="Item0_3" class="treeItem primeraCol ta-c" onclick="joinGame.setSource(this)" valor="4" tabindex="0") E2
+                                    span(id="Item0_4" class="treeItem primeraCol ta-c" onclick="joinGame.setSource(this)" valor="5" tabindex="0") Reacción de eliminación 
+                                    span(id="Item0_5" class="treeItem primeraCol ta-c" onclick="joinGame.setSource(this)" valor="6" tabindex="0") SN1
+                                    span(id="Item0_6" class="treeItem primeraCol ta-c" onclick="joinGame.setSource(this)" valor="7" tabindex="0") E1
+                                    span(id="Item0_7" class="treeItem primeraCol ta-c" onclick="joinGame.setSource(this)" valor="8" tabindex="0") SN2
+                                div(id="linecanvas" style="width: 60px;" class="min-w60")
+                                div(id="targetElements" data-column="2" class="js-columnas game_join-answers" tabindex="0" aria-label="Lista de 10 opciones columna 2")
+                                    span(id="Item1_0" class="treeItem ta-c" onclick="joinGame.setTarget(this)" valor="3" tabindex="0") Se caracteriza por la adición de un electrófilo a compuestos con insaturaciones como dobles o triples enlaces.
+                                    span(id="Item1_1" class="treeItem ta-c" onclick="joinGame.setTarget(this)" valor="5" tabindex="0") Se caracteriza por la eliminación de dos átomos y la formación de un doble enlace o insaturación.
+                                    span(id="Item1_2" class="treeItem ta-c" onclick="joinGame.setTarget(this)" valor="6" tabindex="0") Significa sustitución unimolecular
+                                    span(id="Item1_3" class="treeItem ta-c" onclick="joinGame.setTarget(this)" valor="8" tabindex="0") La anterior reacción es un ejemplo de una reacción de sustitución…
+                                        +image("slide9_14.png")
+                                    span(id="Item1_4" class="treeItem ta-c" onclick="joinGame.setTarget(this)" valor="7" tabindex="0") Significa eliminación unimolecular
+                                    span(id="Item1_5" class="treeItem ta-c" onclick="joinGame.setTarget(this)" valor="1" tabindex="0") Especie negativa que tiene pares de electrones no compartidos y tiene la capacidad de donar electrones.
+                                    span(id="Item1_6" class="treeItem ta-c" onclick="joinGame.setTarget(this)" valor="4" tabindex="0") La anterior reacción es un ejemplo de una reacción de eliminación…
+                                        +image("slide9_13.png")
+                                    span(id="Item1_7" class="treeItem ta-c" onclick="joinGame.setTarget(this)" valor="2" tabindex="0") Especie positiva deficiente de electrones y tiene la capacidad de aceptar electrones.
+                                .btns_game
+                                    button.c-btn_default.open-warning.btn-outline-color Limpiar
+                                +modal('warning', '', '', 'close-warning')(style="max-width:350px")
+                                    p.ta-c(tabindex="0") ¿Está seguro de limpiar el juego?
+                                    div(class="contenedorLimpiar")
+                                        button(class="c-btn_navigation btnClean close-warning btn-outline-color") Sí
+                                        button(class="c-btn_navigation close-warning btn-outline-color") No
+                +slidertabContent().slide9_3
+                    div(class="row-flex")
+                        div(class="col xs12")
+                            h6(class="ta-c" tabindex="0") Actividad 2. Construya la reacción.
+                            p(tabindex="0") De acuerdo con las siguientes estructuras químicas y reactivos, construya reacciones químicas de eliminación o de sustitución, según sea el caso; y diferenciar si es de tipo unimolecular o bimolecular. Para ello, seleccione la estructura y reactivos, y arrástrelos al sitio indicado. Cuando construya la reacción correcta, conteste la pregunta.
+                    div(class="parent")
+                        .dragDrop(role="application")
+                            #drags(aria-label='Aquí estan los elementos que se pueden copiar y pegar con control c y con control v respectivamente. Para escuchar las instrucciones oprima las teclas SHIFT, más, A.' )
+                                div(class="row-flex u-justify-center u-align-items-center")
+                                    div(class="col-center xs12 cajas")
+                                        #copy_1.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="1" alt = ""): +image("slide9_4.png")
+                                        #copy_2.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="2" alt = ""): +image("slide9_5.png")
+                                        #copy_3.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="3" alt = ""): +image("slide9_6.png")
+                                        #copy_4.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="4" alt = ""): +image("slide9_7.png")
+                                        #copy_5.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="5" alt =""): +image("slide9_8.png")
+                                        #copy_6.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="6" alt = ""): +image("slide9_9.png")
+                                        #copy_7.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="7" alt = ""): +image("slide9_10.png")
+                                        #copy_8.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="8" alt = ""): +image("slide9_11.png")
+                                        #copy_9.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="9" alt = ""): +image("slide9_12.png")
+                                div(class="dataDropFocus row-flex u-justify-center u-align-items-center" tabindex="0" aria-label="Esta es la seccion en la cual puede pegar su opcion copiada. desplazese con la tecla tabulación.")
+                                    div(class="col-center xs12 md6")
+                                        h6(class="ta-c" tabindex="0") Reacción 1
+                                        #drops: .c-dropCont
+                                            .js-drop.drop(id="drop-1" data="4" aria-label='Aqui puede pegar su seleccion' tabindex='0' dropDescription='Campo 1 de 3 ')
+
+                                            .js-drop.drop(id="drop-2" data="7" aria-label='Aqui puede pegar su seleccion' tabindex='0' dropDescription='Campo 2 de 3')
+
+                                            .js-drop.drop(id="drop-3" data="6" aria-label='Aqui puede pegar su seleccion' tabindex='0' dropDescription='Campo 3 de 3')
+                                    div(class="col-center xs12 md6")
+                                        div(class="box-question")
+                                            p.question(tabindex="0") A partir de esta reacción, seleccione si es SN1, SN2, E1 o E2.
+                                            div(class="answers")
+                                                .option(tabindex="0")
+                                                    b(class ="js-checkBox") a.
+                                                    +inputValidate('radio', 'id_1', 'name_1', 1)( class="js-input_validate checkBox js-check_b" data="E1") E1
+                                                .option(tabindex="0")
+                                                    b(class ="js-checkBox") b.
+                                                    +inputValidate('radio', 'id_2', 'name_1', 2)(class="js-input_validate checkBox js-check_b" data="SN1") SN1
+
+                                                .option(tabindex="0")
+                                                    b(class ="js-checkBox") c.
+                                                    +inputValidate('radio', 'id_3', 'name_1', 3)(class="js-input_validate checkBox js-check_b" data="E2") E2
+
+                                                .option(tabindex="0")
+                                                    b(class ="js-checkBox") d.
+                                                    +inputValidate('radio', 'id_4', 'name_1', 4)(class="js-input_validate checkBox js-check_b" data="SN2") SN2
+                +slidertabContent().slide9_4
+                    div(class="row-flex")
+                        div(class="col xs12")
+                        h6(class="ta-c"  tabindex="0") Actividad 2. Construya la reacción.
+                        p De acuerdo con las siguientes estructuras químicas y reactivos, construya reacciones químicas de eliminación o de sustitución, según sea el caso; y diferenciar si es de tipo unimolecular o bimolecular. Para ello, seleccione la estructura y reactivos, y arrástrelos al sitio indicado (Reacción 1, 2 o 3). Cuando construya la reacción correcta, saldrá un mensaje. A partir de este, seleccione si es SN1, SN2, E1 o E2.
+                        div(class="row parent")
+                            .dragDrop(role="application")
+                                #drags(aria-label='Aquí estan los elementos que se pueden copiar y pegar con control c y con control v respectivamente. Para escuchar las instrucciones oprima las teclas SHIFT, más, A.' )
+                                    div(class="row-flex u-justify-center u-align-items-center")
+                                        div(class="col-center xs12 cajas")
+                                            #copy_10.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="10" alt = ""): +image("slide9_4.png")
+                                            #copy_11.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="11" alt = ""): +image("slide9_5.png")
+                                            #copy_12.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="12" alt = ""): +image("slide9_6.png")
+                                            #copy_13.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="13" alt = ""): +image("slide9_7.png")
+                                            #copy_14.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="14" alt = ""): +image("slide9_8.png")
+                                            #copy_15.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="15" alt = ""): +image("slide9_9.png")
+                                            #copy_16.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="16" alt = ""): +image("slide9_10.png")
+                                            #copy_17.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="17" alt = ""): +image("slide9_11.png")
+                                            #copy_18.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="18" alt = ""): +image("slide9_12.png")
+                                    div(class="dataDropFocus row-flex u-justify-center u-align-items-center" tabindex="0" aria-label="Esta es la seccion en la cual puede pegar su opcion copiada. desplazese con la tecla tabulación.")
+                                        div(class="col-center xs12 md4")
+                                            h6(class="ta-c" tabindex="0") Reacción 2
+                                            #drops: .c-dropCont
+                                                .js-drop.drop(id="drop-4" data="17" aria-label='Aqui puede pegar su seleccion' tabindex='0' dropDescription='Campo 1 de 3 ')
+
+                                                .js-drop.drop(id="drop-5" data="18" aria-label='Aqui puede pegar su seleccion' tabindex='0' dropDescription='Campo 2 de 3')
+
+                                                .js-drop.drop(id="drop-6" data="10" aria-label='Aqui puede pegar su seleccion' tabindex='0' dropDescription='Campo 3 de 3')
+                                        div(class="col-center xs12 md6")
+                                            div(class="box-question")
+                                                p.question(tabindex="0") A partir de esta reacción, seleccione si es SN1, SN2, E1 o E2.
+                                                div(class="answers")
+                                                    .option(tabindex="0")
+                                                        b(class ="js-checkBox") a.
+                                                        +inputValidate('radio', 'id_5', 'name_2', 1)( class="js-input_validate checkBox js-check_b" data="E1") E1
+                                                    .option(tabindex="0")
+                                                        b(class ="js-checkBox") b.
+                                                        +inputValidate('radio', 'id_6', 'name_2', 2)(class="js-input_validate checkBox js-check_b" data="SN1") SN1
+
+                                                    .option(tabindex="0")
+                                                        b(class ="js-checkBox") c.
+                                                        +inputValidate('radio', 'id_7', 'name_2', 3)(class="js-input_validate checkBox js-check_b" data="E2") E2
+
+                                                    .option(tabindex="0")
+                                                        b(class ="js-checkBox") d.
+                                                        +inputValidate('radio', 'id_8', 'name_2', 4)(class="js-input_validate checkBox js-check_b" data="SN2") SN2
+                +slidertabContent().slide9_4
+                    div(class="row-flex")
+                        div(class="col xs12")
+                        h6(class="ta-c" tabindex="0") Actividad 2. Construya la reacción.
+                        p De acuerdo con las siguientes estructuras químicas y reactivos, construya reacciones químicas de eliminación o de sustitución, según sea el caso; y diferenciar si es de tipo unimolecular o bimolecular. Para ello, seleccione la estructura y reactivos, y arrástrelos al sitio indicado. Cuando construya la reacción correcta, conteste la pregunta.
+                    div(class="parent")
+                        .dragDrop(role="application")
+                            #drags(aria-label='Aquí estan los elementos que se pueden copiar y pegar con control c y con control v respectivamente. Para escuchar las instrucciones oprima las teclas SHIFT, más, A.' )
+                                div(class="")
+                                    div(class="cajas")
+                                        #copy_19.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="19" alt = ""): +image("slide9_4.png")
+                                        #copy_20.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="20" alt = ""): +image("slide9_5.png")
+                                        #copy_21.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="21" alt = ""): +image("slide9_6.png")
+                                        #copy_22.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="22" alt = ""): +image("slide9_7.png")
+                                        #copy_23.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="23" alt = ""): +image("slide9_8.png")
+                                        #copy_24.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="24" alt = ""): +image("slide9_9.png")
+                                        #copy_25.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="25" alt = ""): +image("slide9_10.png")
+                                        #copy_26.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="26" alt = ""): +image("slide9_11.png")
+                                        #copy_27.js-drag.drag.xs3.sm2.md2.btn-outline-color(tabindex='0' data="27" alt = ""): +image("slide9_12.png")
+                                div(class="dataDropFocus row-flex u-justify-center u-align-items-center" tabindex="0" aria-label="Esta es la seccion en la cual puede pegar su opcion copiada. desplazese con la tecla tabulación.")
+                                    div(class="col-center xs12 md6")
+                                        h6(class="ta-c" tabindex="0") Reacción 3
+                                        #drops: .c-dropCont
+                                            .js-drop.drop(id="drop-1" data="21" aria-label='Aqui puede pegar su seleccion' tabindex='0' dropDescription='Campo 1 de 3 ')
+
+                                            .js-drop.drop(id="drop-2" data="23" aria-label='Aqui puede pegar su seleccion' tabindex='0' dropDescription='Campo 2 de 3')
+
+                                            .js-drop.drop(id="drop-3" data="20" aria-label='Aqui puede pegar su seleccion' tabindex='0' dropDescription='Campo 3 de 3')
+                                    div(class="col-center xs12 md6")
+                                        div(class="box-question")
+                                            p.question(tabindex="0") A partir de esta reacción, seleccione si es SN1, SN2, E1 o E2.
+                                            div(class="answers")
+                                                .option(tabindex="0")
+                                                    b(class ="js-checkBox") a.
+                                                    +inputValidate('radio', 'id_9', 'name_1', 1)( class="js-input_validate checkBox js-check_b" data="E1") E1
+                                                .option(tabindex="0")
+                                                    b(class ="js-checkBox") b.
+                                                    +inputValidate('radio', 'id_10', 'name_1', 2)(class="js-input_validate checkBox js-check_b" data="SN1") SN1
+
+                                                .option(tabindex="0")
+                                                    b(class ="js-checkBox") c.
+                                                    +inputValidate('radio', 'id_11', 'name_1', 3)(class="js-input_validate checkBox js-check_b" data="E2") E2
+
+                                                .option(tabindex="0")
+                                                    b(class ="js-checkBox") d.
+                                                    +inputValidate('radio', 'id_12', 'name_1', 4)(class="js-input_validate checkBox js-check_b" data="SN2") SN2
+
+
+prepend _footer
+    -var prevPage = "08.slide.html"
+    -var nextPage = "10.slide.html"
+
+block script
+    script(src="./assets/library/slides/slider.js")
+    script(src="assets/library/feedback/feedback.js")
+    script(src="assets/library/joinColumns/joinColumn.js")
+    script(src="./assets/library/dragAndDrop/dragAndDrop.js")
+    script(src="./assets/library/jquery-ui.min.js")
+    script(src='./assets/library/jquery.ui.touch-punch.min.js')
+    link(rel="stylesheet" href="assets/library/joinColumns/joinColumns.css")
+    link(rel="stylesheet" href="assets/library/slides/slides.css")
+    script.
+        let object = {
+            arrContexts: ['#game_unir_1'], //? Arreglo con los id's de los juegos.
+            arrContextLineCanvas: ['#linecanvas'] //? Arreglo con los id's de los divs, se van a dibujar las lineas.
+        }
+
+        let joinGame = new JoinColums (object);
+        joinGame.initialize();
+
+        const myCallback = (objData) => {
+            let currentSlide = objData.currentSlide;
+            feedback.initialize({
+                bien: ['','',
+                    'Es una reacción donde la base es fuerte (CH#[sub 3]O#[sup -]Na#[sup +], etóxido de sodio), el sustrato es secundario y el solvente es polar prótico.',
+                    'Los reactivos de esta reacción son el acetato de sodio (CH#[sub 3]CO#[sub 2]#[sup -]Na#[sup +]), el cual es el nucleófilo y el ácido acético (CH#[sub 3]COO#[sub 2]H) el cual es un solvente prótico.',
+                    'Es una reacción donde la base es fuerte (KOH, hidróxido de potasio), el sustrato es secundario y el solvente es polar prótico.'
+                    ],
+                mal:[
+                'Siga intentando.','Siga intentando.','Siga intentando.','Siga intentando.','Siga intentando.'],
+                }, currentSlide);
+
+            const feedbBack = (respGame) => {
+                asnwerCorrect = document.getElementsByClassName('js-checkBox bien').length;
+                feedback.index = objData.index
+                feedback.give(respGame.status);
+            }
+
+            //- fullDragDrop.initialize('.dragDrop2',1, false,true);
+            fullDragDrop.initialize('.currentSlide',1, false, true);
+
+
+            if(objData.index == 0){
+            }else if(objData.index == 2){
+            }else if(objData.index == 3){
+
+            }else if(objData.index == 4){
+                //- ova.inputchecked(currentSlide, 0, [2,2,2], feedbBack);
+            }
+
+
+            ova.inputchecked(currentSlide, objData.index, [1,1,3,2,3], feedbBack);
+
+        };
+
+        var warning = new ovaDialog('warning')
+        warning.addEventListeners('.open-warning', '.close-warning');
+        slider.initialize(myCallback);
+
+
+
+        slide2.addEventListener('click',()=>{
+            sl.open(1);
+        });
+
+        slide3.addEventListener('click',()=>{
+            sl.open(2);
+        });

@@ -1,0 +1,11 @@
+extends ../../../app/pug/_iframes
+
+prepend config
+    include _setMenu
+    -var linkActive = 'Créditos'
+block main
+    +title(null, linkActive, 'creditos_1', false)
+    +creditos(collegeName, "Paula Andrea Méndez Morales")
+
+    -var prevPage = "12.slide.html"
+    -var nextPage = ""

@@ -1,0 +1,66 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[5].word
+
+block main
+    div(class="slide5")
+        +title('5', linkActive, 'slide5_1')
+        div(class="row-flex u-justify-center u-align-items-center")
+            div(class="col xs12")
+
+            div(class="col xs12")
+                p(tabindex="0") En las reacciones de sustitución, eliminación y adición, es importante identificar los conceptos de nucleófilo y electrófilo. Por ello, estudiaremos las definiciones.
+                p(tabindex="0") Un nucleófilo se caracteriza por tener alta densidad electrónica, tiene pares de electrones no compartidos por lo cual tiene la capacidad de donar electrones.
+                p(tabindex="0") Por su parte, una especie electrófila tiene baja densidad electrónica, es deficiente en electrones y tiene la capacidad para adquirir electrones. En la siguiente tabla se presentan algunos ejemplos.
+
+            div(class="col xs12 sm6 md8")
+                table
+                    caption(class="titulo")
+                        tr
+                            th(tabindex="0")  Reactivo
+                                    p(class="nucleofilico" tabindex="0")  Nucleofílico (Nu-)
+                            th(tabindex="0")  Reactivo
+                                    p(class="electrofilico" tabindex="0") Electrofílico (E+)
+                        tr
+                            td(tabindex="0") Alta densidad electrónica
+                            td(tabindex="0") Baja densidad electrónica
+                        tr
+                            td(tabindex="0") Par de electrones no compartidos
+                            td(tabindex="0") Deficiente de electrones
+
+                        tr
+                            td(tabindex="0") Cantidad  de donar  electrones
+                            td(tabindex="0") Capacidad  para adquirir electrones
+                        tr
+                            td(tabindex="0") Por ejemplo: <br> Nucleofilos fuertes (bases fuertes): I<sup>-</sup>, -SH<sup>-</sup>, HO<sup>-</sup>, R-O<sup>-</sup>, R<sub>2</sub>N<sup>-</sup>, H<sub>2</sub>N<sup>-</sup> <br>  Nucleófilos moderados: BR<sup>-</sup>, NH<sub>3</sub>, CH<sub>3</sub>-S-CH<sub>3</sub>, Cl<sup>-</sup> <br> Nucleófilos débiles: (bases debiles) : ROH, H<sub>2</sub>O, haluros  RCOO<sup>-</sup>, NC<sup>-</sup>, N<sub>3</sub><sup>-</sup>, RS <sup>-</sup>
+                            td(tabindex="0") Por ejemplo: <br> NH<sub>4</sub><sup>+</sup>, H<sub>3</sub>O<sup>+</sup>, -C=O, NO<sub>2</sub><sup>+</sup>
+
+                p(tabindex="0") Ahora bien, dada las características del nucleófilo y el electrófilo, estos a su vez se comportan como bases y ácidos de Lewis, respectivamente. Y de esta manera pueden definir si se favorece una reacción de sustitución o de eliminación. En la parte inferior de la tabla se presentan algunos nucleófilos y se clasifican como bases fuertes o débiles. Esto será de importancia para predecir el tipo de reacción, ya que las reacciones de eliminación se favorecen con bases fuertes.
+
+            div(class="col xs12 sm6 md3 contenedorImagen")
+                +audio2("slide5_2")(class="centrado" id="reproductor")
+                span(class="c-content-video draggable-video" video-accesibility)
+                    +video('slide5-accesibility_2_drag', '', 6)(aria-hidden="true" controls="true")
+                +image("slide5_1.gif")(class="imagenCinco hidden" id="personajeGif")
+                +image("slide5_2.png", "Hombre presentando el contenido.","Animación 6:")(class="imagenCinco" id="personajePng")
+
+
+
+prepend _footer
+    -var prevPage = "04.slide.html"
+    -var nextPage = "06.slide.html"
+block script
+    script.
+        reproductor.addEventListener("play", function(){
+            personajePng.classList.add("hidden");
+            personajeGif.classList.remove("hidden");
+        })
+        reproductor.addEventListener("pause", function(){
+            personajePng.classList.remove("hidden");
+            personajeGif.classList.add("hidden");
+        })
+        reproductor.addEventListener("ended", function(){
+            personajePng.classList.remove("hidden");
+            personajeGif.classList.add("hidden");
+        })

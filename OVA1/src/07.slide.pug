@@ -1,0 +1,74 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[7].word
+block main
+    div(class="slide7")
+        +title('7', linkActive, 'slide7_1')
+        div(class="row-flex")
+            div(class="col xs12 sm6 md9")
+                p(tabindex="0") Se caracteriza por la eliminación de dos átomos y la formación de un doble enlace o insaturación, como se muestra de forma general en la siguiente reacción química. Si bien, la reacción se representa en 3D esta también puede representarse en 2D,#[b  para ello debe seleccionar la imagen.]
+                button(class=" openModal1 btn-transparent " aria-label="Animación 11: Representación de una reacción de eliminación en 3D. Presione para más información")
+                    +image("slide7_2.gif", "Representación de una reacción de eliminación en 3D.", "Animación 11:")(class="imgEliminacion" tabindex="-1")
+            div(class="col xs12 sm6 md3")
+                +image("slide7_1.gif")(class="avatar hidden" id="personajeGif")
+                +image("slide7_7.png", "avatar moviendo la mano simulando una explicación.", "Animación  14:")(class="avatar" id="personajePng")
+                +audio2("slide7_2")(class="centrado" id="reproductor")
+                span(class="c-content-video draggable-video" video-accesibility)
+                    +video('slide7-accesibility_2_drag', '', 2)(aria-hidden="true" controls="true")
+            div(class="col xs12 sm6 md9")
+                p(class="mecanismos" tabindex="0") Se presenta dos mecanismos, que dependen de varios factores como el solvente, los grupos adyacentes, las etapas de la reacción y formación de intermediarios
+                .col.xs12.sm6
+                    h6(class="ta-c" tabindex="0") E1 (Eliminación unimolecular)
+                    button(class=" openModal2 btn-transparent" aria-label="Animación 12: Representación de una reacción de eliminación unimolecular en 3D. Presione para más información")
+                        +image("slide7_4.gif", "Representación de una reacción de eliminación unimolecular en 3D.", "Animación 12:")(class="imgEliminacion" tabindex="-1")
+                .col.xs12.sm6
+                    h6(class="ta-c" tabindex="0") E2 (Eliminación bimolecular)
+                    button(class="openModal3 btn-transparent " aria-label="Animación 13: Representación de una reacción de eliminación bimolecular. Presione para más información")
+                        +image("slide7_3.gif", "Representación de una reacción de eliminación bimolecular.", "Animación 13:")(class=" imgEliminacion" tabindex=-"-1")
+                .col.xs12
+                    button(class="centrado verMas openModal4 btn-outline-color" aria-label="Botón Nota. Presione para más información") NOTA
+        +modal("modal1","","","closeModal1")
+                div(class="row-flex")
+                    div(class="col xs12")
+                        p(tabindex="0") La reacción también se puede representar con líneas y cuñas, como se muestra a continuación: Imagen 8.
+                        +image("slide7_4.png","Representación de una reacción de eliminación en 2D. ","Imagen 8:")
+                        p(tabindex="0") En esta se observa el carbono alfa y beta, los cuales son importantes en el momento que la base abstrae el protón.
+                        p(tabindex="0") Se presenta dos mecanismos, que dependen de varios factores como el solvente, los grupos adyacentes, las etapas de la reacción y formación de intermediarios:
+        +modal("modal2","","","closeModal2")
+                div(class="row-flex")
+                    div(class="col xs12")
+                        p(tabindex="0") La reacción se da en dos pasos: P1. El grupo saliente sale de la posición β y se forma un carbocatión. P2. La base abstrae un protón en la posición α y se forma el doble enlace. La velocidad de la reacción depende del sustrato. La reacción también se puede representar con líneas y cuñas, como se muestra a continuación: Imagen 9.
+                        +image("slide7_5.png","Representación de una reacción de eliminación en 2D.","Imagen 9:")
+        +modal("modal3","","","closeModal3")
+                div(class="row-flex")
+                    div(class="col xs12")
+                        p(tabindex="0") La reacción se da de forma concertada; donde la base fuerte abstrae un protón y sale un grupo saliente de la posición β, y se forma un doble enlace, al mismo tiempo. La velocidad de la reacción depende del sustrato y de la base. La reacción también se puede representar con líneas y cuñas, como se muestra a continuación: Imagen 10.
+                        +image("slide7_6.png","Representación de una reacción de eliminación bimolecular en 2D.","Imagen 10:")
+        +modal("modal4","","","closeModal4")
+                div(class="row-flex")
+                    div(class="col xs12")
+                        p(class="ta-c" tabindex="0") Se favorece el mecanismo E2 sobre el E1 cuando la base sea más fuerte y la concentración sea mayor.
+
+prepend _footer
+    -var prevPage = "06.slide.html"
+    -var nextPage = "08.slide.html"
+
+block script
+    script.
+        var dialogModal1 = new ovaDialog('modal1');
+        dialogModal1.addEventListeners('.openModal1','.closeModal1');
+        var dialogModal2 = new ovaDialog('modal2');
+        dialogModal2.addEventListeners('.openModal2','.closeModal2');
+        var dialogModal3 = new ovaDialog('modal3');
+        dialogModal3.addEventListeners('.openModal3','.closeModal3');
+        var dialogModal4 = new ovaDialog('modal4');
+        dialogModal4.addEventListeners('.openModal4','.closeModal4');
+        reproductor.addEventListener("play",function(){
+            personajeGif.classList.remove("hidden");
+            personajePng.classList.add("hidden");
+        });
+        reproductor.addEventListener('pause', function(){
+            personajeGif.classList.add('hidden');
+            personajePng.classList.remove('hidden')
+        });

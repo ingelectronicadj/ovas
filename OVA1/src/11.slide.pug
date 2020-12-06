@@ -1,0 +1,313 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[11].word
+block main
+    div(class="slide11")
+        +title('11', linkActive, 'slide11_1')
+        div(class="row-flex")
+            +slider()
+                +slidertabContent()
+                    div(class="row-flex")
+                        div(class="col-center  xs12")
+                            p(class="ta-c" tabindex="0") En la reacción 1 encontrarán tres reactivos, para conocer qué tipo de reactivos son, debe seleccionar cada recipiente y leer la descripción.
+                        div(class="col-center  xs12 sm10  contenedor")
+                            <svg class="elementoSVG" role="application" tabindex="0" aria-label="svg interactivo con cuatro iamgenes de agua r1 etanol y un balon de ensayo con liquido rojo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 399.8 399.1">
+                                <style> .st0{fill:#fbf0e6}.st1{fill:#6d6d6d}.st2{opacity:.1;fill:#515151}.st3{fill:#232323}.st4{fill:#a57e55}.st5{opacity:.4;fill:url(#SVGID_1_)}.st6{fill:url(#SVGID_2_)}.st7{fill:url(#SVGID_3_)}.st8{fill:url(#SVGID_4_)}.st9{display:none}.st10{fill:url(#SVGID_5_)}.st10,.st11,.st12{display:inline}.st11{fill:url(#SVGID_6_)}.st12{opacity:.67}.st13{fill:#bdfc86}.st14{opacity:.5;fill:#fff}.st15{fill:url(#SVGID_7_)}.st16{opacity:.3;fill:url(#SVGID_8_)}.st17{opacity:.15;fill:#fff}.st18{fill:url(#SVGID_9_)}.st19{fill:url(#SVGID_10_)}.st20{fill:none;stroke:#fff;stroke-width:.3002;stroke-miterlimit:10}.st21{fill:#fff}.st22{fill:#0f7aa5}.st23{font-family:}.st24{font-size:15.1405px}.st25{fill:#8124e2}.st26{fill:#8da350} </style>
+                                    <g id="Fondo">
+                                        <path class="st0" d="M.2-.4h400v400H.2z"/>
+                                        <path class="st1" d="M-122.6 316.8h3l-3 5v-5"/>
+                                        <path class="st2" d="M.2 201.5s61-124.9 200-124.9 200 125.4 200 125.4V-.4H.2v201.9z"/>
+                                        <path class="st3" d="M.5 181.6h399.7v218H.5z"/>
+                                        <path class="st4" d="M.5 181.6h399.7v18H.5z"/>
+                                        <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="192.38" y1="333.59" x2="231.6" y2="-160.74">
+                                        <stop offset=".01" stop-color="#fff" stop-opacity="0"/>
+                                        <stop offset=".09" stop-color="#f7f7f7" stop-opacity=".09"/>
+                                        <stop offset=".22" stop-color="#e1e1e1" stop-opacity=".22"/>
+                                        <stop offset=".39" stop-color="#bebebe" stop-opacity=".38"/>
+                                        <stop offset=".57" stop-color="#8c8c8c" stop-opacity=".57"/>
+                                        <stop offset=".78" stop-color="#4c4c4c" stop-opacity=".78"/>
+                                        <stop offset="1"/>
+                                        </linearGradient>
+                                        <path class="st5" d="M-.5 294.7s22.7-41.2 199.7-41.2 200 41.2 200 41.2v-95.2H-.8l.3 95.2z"/>
+                                        <g id="_x35__2_">
+                                        <g id="Base_1_">
+                                            <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="257.39" y1="163.47" x2="266" y2="233.93" gradientTransform="rotate(-100.7 321.51 162.55)">
+                                            <stop offset=".06" stop-color="#fff"/>
+                                            <stop offset=".24" stop-color="#ecf6f6"/>
+                                            <stop offset=".59" stop-color="#b9e0e0"/>
+                                            <stop offset="1" stop-color="#78c3c3"/>
+                                            </linearGradient>
+                                            <path class="st6" d="M389.4 212.1c.2 1.3 0 2.7-.7 4-.8 1.4-2.2 2.4-3.8 2.7l-44.2 8.3.1.7c0 .2-.1.5-.3.5l-1.2.2c-.2 0-.5-.1-.5-.3l-2.4-12.6c0-.2.1-.5.3-.5l1.2-.2c.2 0 .5.1.5.3l.1.7 44.2-8.3c1.6-.3 3.3.1 4.6 1.1 1.1.9 1.8 2.1 2.1 3.4zm-49.5 15.5l-.1-.7c0-.2.1-.5.3-.5l44.6-8.4c1.4-.3 2.6-1.1 3.3-2.3 1.2-2.1.7-4.8-1.2-6.3-1.1-.9-2.5-1.2-3.9-.9l-44.6 8.4c-.2 0-.5-.1-.5-.3l-.1-.7-.4.1 2.2 11.8.4-.2z"/>
+                                            <radialGradient id="SVGID_3_" cx="245.86" cy="164.93" r="74.82" gradientTransform="matrix(-.1852 -.9827 .9917 -.1869 216.46 509.46)" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#84cbcb" stop-opacity=".4"/>
+                                            <stop offset=".59" stop-color="#39dde1" stop-opacity=".59"/>
+                                            <stop offset=".91" stop-color="#16e5eb" stop-opacity=".69"/>
+                                            </radialGradient>
+                                            <path class="st7" d="M387 209c2.1 1.6 2.7 4.6 1.3 6.8-.8 1.3-2.1 2.2-3.6 2.5l-45 8.5-1.9-10.3 45-8.5c1.5-.3 3 .1 4.2 1z"/>
+                                            <radialGradient id="SVGID_4_" cx="256.51" cy="164.5" r="14.41" gradientTransform="rotate(-100.7 321.51 162.55)" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#84cbcb" stop-opacity=".4"/>
+                                            <stop offset=".59" stop-color="#39dde1" stop-opacity=".59"/>
+                                            <stop offset=".91" stop-color="#16e5eb" stop-opacity=".69"/>
+                                            </radialGradient>
+                                            <path class="st8" d="M337.7 215.9l2.2 11.6-.4.1-2.2-11.7z"/>
+                                            <g id="COLOR_3_" class="st9">
+                                            <radialGradient id="SVGID_5_" cx="257.51" cy="179.47" r="21.15" gradientTransform="rotate(-100.7 321.51 162.55)" gradientUnits="userSpaceOnUse">
+                                                <stop offset=".04" stop-color="#44d919"/>
+                                                <stop offset=".33" stop-color="#49d819"/>
+                                                <stop offset=".66" stop-color="#57d619"/>
+                                                <stop offset="1" stop-color="#6dd318"/>
+                                            </radialGradient>
+                                            <path class="st10" d="M362.9 221.5s.8-.9.1-4.4c-.7-3.4-1.7-3.9-1.7-3.9s-.4.5.3 4.3 1.3 4 1.3 4z"/>
+                                            <radialGradient id="SVGID_6_" cx="257.53" cy="-38.82" r="354.99" gradientTransform="rotate(-100.7 321.51 162.55)" gradientUnits="userSpaceOnUse">
+                                                <stop offset=".04" stop-color="#44d919"/>
+                                                <stop offset=".33" stop-color="#49d819"/>
+                                                <stop offset=".66" stop-color="#57d619"/>
+                                                <stop offset="1" stop-color="#6dd318"/>
+                                            </radialGradient>
+                                            <path class="st11" d="M362.8 221.5l-1.6-8.3 21.5-4.1c1.1-.2 2.2 0 3.1.6 1.9 1.3 2.3 3.8 1.1 5.7l-.1.2c-.6.9-1.5 1.5-2.6 1.7l-21.4 4.2z"/>
+                                            <g class="st12">
+                                                <path class="st13" d="M362.8 221.5c.3-.3.3-.6.4-1v-1.1l-.3-2.2c-.1-.7-.3-1.4-.6-2.1-.3-.7-.5-1.4-1.1-1.9.6.5.9 1.2 1.2 1.8.3.7.5 1.4.6 2.1.1.7.3 1.5.3 2.2 0 .4 0 .7-.1 1.1 0 .4-.1.8-.4 1.1z"/>
+                                            </g>
+                                            </g>
+                                            <circle class="st14" cx="368.6" cy="214.5" r=".7"/>
+                                            <circle class="st14" cx="375.2" cy="212.6" r=".6"/>
+                                            <circle class="st14" cx="367.8" cy="213.4" r=".3"/>
+                                            <circle class="st14" cx="372.9" cy="212.2" r=".3"/>
+                                            <circle class="st14" cx="377" cy="212.9" r=".2"/>
+                                            <circle class="st14" cx="373.3" cy="213.2" r=".2"/>
+                                            <circle class="st14" cx="370.4" cy="213.6" r=".6"/>
+                                            <circle class="st14" cx="366" cy="214.1" r=".4"/>
+                                            <radialGradient id="SVGID_7_" cx="245.86" cy="164.93" r="74.82" gradientTransform="matrix(-.1852 -.9827 .9917 -.1869 216.46 509.46)" gradientUnits="userSpaceOnUse">
+                                            <stop offset=".15" stop-color="#6baec4" stop-opacity="0"/>
+                                            <stop offset=".51" stop-color="#6ab0c6" stop-opacity=".42"/>
+                                            <stop offset=".71" stop-color="#66b8cc" stop-opacity=".66"/>
+                                            <stop offset=".87" stop-color="#5fc6d6" stop-opacity=".84"/>
+                                            <stop offset="1" stop-color="#55d9e5"/>
+                                            </radialGradient>
+                                            <path class="st15" d="M387 209c2.1 1.6 2.7 4.6 1.3 6.8-.8 1.3-2.1 2.2-3.6 2.5l-45 8.5-1.9-10.3 45-8.5c1.5-.3 3 .1 4.2 1z"/>
+                                            <radialGradient id="SVGID_8_" cx="256.48" cy="201.73" r="35.96" gradientTransform="rotate(-100.7 321.51 162.55)" gradientUnits="userSpaceOnUse">
+                                            <stop offset=".13" stop-color="#fff"/>
+                                            <stop offset=".24" stop-color="#fff" stop-opacity=".88"/>
+                                            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                                            </radialGradient>
+                                            <path class="st16" d="M371.2 219.8l12.9-2.4s4.2-.7 3.4-4.9c-.8-4.2-4.6-3.7-4.6-3.7l-13.4 2.5s14-2 14.7 1.9-13 6.6-13 6.6z"/>
+                                            <path class="st17" d="M387 209c2.1 1.6 2.7 4.6 1.3 6.8-.8 1.3-2.1 2.2-3.6 2.5l-45 8.5-1.9-10.3 45-8.5c1.5-.3 3 .1 4.2 1z"/>
+                                        </g>
+                                        <g id="Brillos_1_">
+                                            <radialGradient id="SVGID_9_" cx="265.56" cy="190.53" r="51.28" gradientTransform="rotate(-100.7 321.51 162.55)" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#fff"/>
+                                            <stop offset=".12" stop-color="#fff" stop-opacity=".88"/>
+                                            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                                            </radialGradient>
+                                            <path class="st18" d="M360.6 222.5l24.6-4.7s4.1-1.2 3.3-5.6-5.6-3.7-5.6-3.7l-24.3 4.6s15.7-2.3 16.5 1.7c.7 3.9-14.5 7.7-14.5 7.7z"/>
+                                            <radialGradient id="SVGID_10_" cx="257.71" cy="184.29" r="20.64" gradientTransform="rotate(-100.7 321.51 162.55)" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#fff"/>
+                                            <stop offset=".14" stop-color="#fff" stop-opacity=".86"/>
+                                            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                                            </radialGradient>
+                                            <path class="st19" d="M342 224.3c4.1-.3 8.1-1.1 12.2-1.8.9-.2 1.8-.3 2.8-.5l9.4-1.8c.4-.1.8-.1 1-.4.3-.2.4-.7.2-1-.2-.2-.4-.2-.7-.3-3.9-.5-7.9.4-11.7 1.2-3.8.8-7.6 1.6-11.2 2.8-.5.1-.9.3-1.3.6s-.6.8-.5 1.3l1.8.3"/>
+                                            <path class="st20" d="M344.8 224.5l-.7-3.7M352 223.2l-.7-3.8M359.2 221.8l-.7-3.7M366.4 220.5l-.7-3.8M373.6 219.1l-.7-3.7M380.8 217.7l-.7-3.7"/>
+                                        </g>
+                                        </g>
+                                    </g>
+                                <a role="link" tabindex="0" xLink:href='#' class="openModal1 hover-button " aria-label="boton de la descripcion imperio egipcio. Acciona este botón consultar más información." animation="shake duration-2 delay-1.5">
+                                    <g id="Agua_1_">
+                                        <image width="148" height="175" xlink:href="./assets/images/Botella_agua.png" transform="translate(29.77 231.53) scale(.5352)" overflow="visible"/>
+                                        <path class="st21" d="M91.7 357.4H46.4c-6.6 0-11.9-5.3-11.9-11.9 0-6.6 5.3-11.9 11.9-11.9h45.3c6.6 0 11.9 5.3 11.9 11.9.1 6.5-5.3 11.9-11.9 11.9z"/>
+                                        <text transform="translate(52.4 349.82)" class="st22 st23 st24"> Agua </text>
+                                    </g>
+                                </a>
+                                <a role="link" tabindex="0" xLink:href='#' class="openModal3 hover-button " aria-label="boton de la descripcion imperio egipcio. Acciona este botón consultar más información." animation="shake duration-2 delay-2">
+                                    <g id="R1">
+                                        <image width="100" height="327" xlink:href="./assets/images/Botella_r1.png" transform="translate(140.43 121.6) scale(.4986)" overflow="visible"/>
+                                        <path class="st21" d="M189 288.5h-45.3c-6.6 0-11.9-5.3-11.9-11.9 0-6.6 5.3-11.9 11.9-11.9H189c6.6 0 11.9 5.3 11.9 11.9 0 6.6-5.3 11.9-11.9 11.9z"/>
+                                        <text transform="translate(157.02 280.98)" class="st25 st23 st24"> R1 </text>
+                                    </g>
+                                </a>
+                                <a role="link" tabindex="0" xLink:href='#' class="openModal2 hover-button " aria-label="boton de la descripcion imperio egipcio. Acciona este botón consultar más información." animation="shake duration-2 delay-2.5">
+                                    <g id="Etanol">
+                                        <image width="119" height="174" xlink:href="./assets/images/Botella_Etanol.png" transform="translate(217.88 212.25) scale(.5093)" overflow="visible"/>
+                                        <path class="st21" d="M270.5 335.2h-45.3c-6.6 0-11.9-5.3-11.9-11.9 0-6.6 5.3-11.9 11.9-11.9h45.3c6.6 0 11.9 5.3 11.9 11.9 0 6.6-5.3 11.9-11.9 11.9z"/>
+                                        <text transform="translate(227.28 327.68)" class="st26 st23 st24"> Etanol </text>
+                                    </g>
+                                </a>
+                                <a role="link" tabindex="0" xLink:href='#' class="openModal4 hover-button " aria-label="boton de la descripcion imperio egipcio. Acciona este botón consultar más información." animation="shake duration-2 delay-3">
+                                    <image width="145" height="470" xlink:href="./assets/images/Balon_rojo.gif" transform="translate(256.45 22.88) scale(.4963)" overflow="visible" id="Balon_rojo"/>
+                                </a>
+                            </svg>
+                            figure(class="c-figure"): figcaption(class="c-figure_caption").
+                                #[span(class="c-figure_caption-title") Animación 15:] &nbsp
+                                #[span(class="c-figure_caption-alt") Diferentes instrumentos de laboratorio  con elementos químicos.]
+
+                        div(class="col-center  xs12 sm10")
+                            p(class="ta-c" tabindex="0") Una vez se conocen los reactivos, estos se mezclarán. Primero debe adicionarse el agua y el etanol, en una proporción 80:20 (v/v), se homogeniza y luego se adiciona el halogenuro de alquilo. La mezcla se someterá a calentamiento en un reflujo durante 1 hora con agitación constante.
+                            p(class="ta-c" tabindex="0") #[b Para visualizar la ecuación química de la reacción seleccione el balón de reacción.] Ahora, de acuerdo con la estructura química de los reactivos, responder las siguientes preguntas, las cuales son de selección múltiple con única respuesta:
+                +slidertabContent()
+                    div(class="row-flex u-align-items-center")
+                        div(class="col-center -center xs12 md10 box-question")
+                            h6(class="ta-c question" tabindex="0") Pregunta 1:
+                            p.question(tabindex="0") ¿Qué tipo de sustrato es el halogenuro de alquilo?
+                            div(class="answers")
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") a.
+                                    +inputValidate('radio', 'id_1', 'name_1', 1)( class="js-input_validate checkBox js-check_b" data="Primario ") Primario
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") b.
+                                    +inputValidate('radio', 'id_2', 'name_1', 2)(class="js-input_validate checkBox js-check_b" data=" Secundario") Secundario
+
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") c.
+                                    +inputValidate('radio', 'id_3', 'name_1', 3)(class="js-input_validate checkBox js-check_b" data="Terciario") Terciario
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") d.
+                                    +inputValidate('radio', 'id_4', 'name_1', 4)(class="js-input_validate checkBox js-check_b" data="Ninguna de las anteriores") Ninguna de las anteriores
+                +slidertabContent()
+                    div(class="row-flex u-align-items-center")
+                        div(class="col-center  xs12 md10 box-question")
+                            h6(class="ta-c" tabindex="0") Pregunta 2:
+                            p(tabindex="0") Se favorece la formación de:
+                            div(class="answers")
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") a.
+                                    +inputValidate('radio', 'id_5', 'name_2', 1)( class="js-input_validate checkBox js-check_b" data="Un carbocatión terciario.") Un carbocatión terciario.
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") b.
+                                    +inputValidate('radio', 'id_6', 'name_2', 2)(class="js-input_validate checkBox js-check_b" data="Un carbocatión primario.") Un carbocatión primario.
+
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") c.
+                                    +inputValidate('radio', 'id_7', 'name_2', 3)(class="js-input_validate checkBox js-check_b" data="Un carbocatión secundario.") Un carbocatión secundario.
+
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") d.
+                                    +inputValidate('radio', 'id_8', 'name_2', 4)(class="js-input_validate checkBox js-check_b" data="No se favorece la formación. ") No se favorece la formación.
+                +slidertabContent()
+                    div(class="row-flex")
+                        div(class="col-center  xs12 md10 box-question")
+                            h6.ta-c(tabindex="0") Pregunta 3:
+                            p(tabindex="0") El papel del agua/etanol (H#[sub 2]O/CH#[sub 3]CH#[sub 2]OH) es respectivamente:
+                            div(class="answers")
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") a.
+                                    +inputValidate('radio', 'id_9', 'name_3', 1)( class="js-input_validate checkBox js-check_b" data="Solvente/solvente") Solvente/solvente
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") b.
+                                    +inputValidate('radio', 'id_10', 'name_3', 2)(class="js-input_validate checkBox js-check_b" data="Nucleófilo/solvente") Nucleófilo/solvente
+
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") c.
+                                    +inputValidate('radio', 'id_11', 'name_3', 3)(class="js-input_validate checkBox js-check_b" data="Solvente/Nucleófilo") Solvente/Nucleófilo
+
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") d.
+                                    +inputValidate('radio', 'id_12', 'name_3', 4)(class="js-input_validate checkBox js-check_b" data="Nucleófilo/nucleófilo") Nucleófilo/nucleófilo
+                +slidertabContent()
+                    div(class="row-flex u-align-items-center")
+                        div(class="col-center  xs12 md10 box-question")
+                            h6.ta-c(tabindex="0") Pregunta 4:
+                            p(tabindex="0") De acuerdo con las reacciones estudiadas, ¿Qué tipo de reacción es?
+                            div(class="answers")
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") a.
+                                    +inputValidate('radio', 'id_13', 'name_4', 1)( class="js-input_validate checkBox js-check_b" data="SN2") SN2
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") b.
+                                    +inputValidate('radio', 'id_14', 'name_4', 2)(class="js-input_validate checkBox js-check_b" data="SN1") SN1
+
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") c.
+                                    +inputValidate('radio', 'id_15', 'name_4', 3)(class="js-input_validate checkBox js-check_b" data="E1") E1
+
+                                .option(tabindex="0")
+                                    b(class ="js-checkBox") d.
+                                    +inputValidate('radio', 'id_16', 'name_4', 4)(class="js-input_validate checkBox js-check_b" data="E2") E2
+                +slidertabContent()
+                    div(class="row-flex")
+                        div(class="col-center xs12 box-question")
+                            h6.ta-c(tabindex="0") Pregunta 5:
+                            p(tabindex="0") Según el tipo de reacción, ¿cuál de las siguientes estructuras es el producto de esta reacción?
+                            div(class="answers columns")
+                                .option.img(tabindex="0")
+                                    b(class ="js-checkBox") a.
+                                    +inputValidateCheck('radio', 'id_17', 'name_5', 1, 'Opción A')( class="js-input_validate checkBox js-check_b" data="")
+                                        +image("slide11_4.png")(tabindex="-1")
+                                .option.img(tabindex="0")
+                                    b(class ="js-checkBox") b.
+                                    +inputValidateCheck('radio', 'id_18', 'name_5', 2, 'Opción B')(class="js-input_validate checkBox js-check_b" data="")
+                                        +image("slide11_5.png")(tabindex="-1")
+                                .option.img(tabindex="0")
+                                    b(class ="js-checkBox") c.
+                                    +inputValidateCheck('radio', 'id_19', 'name_5', 3, 'Opción C')(class="js-input_validate checkBox js-check_b" data="")
+                                        +image("slide11_6.png")(tabindex="-1")
+                                .option.img(tabindex="0")
+                                    b(class ="js-checkBox") d.
+                                    +inputValidateCheck('radio', 'id_20', 'name_5', 4, 'Opción  D')(class="js-input_validate checkBox js-check_b" data="")
+                                        +image("slide11_7.png")(tabindex="-1")
+
+        +modal("modal1","","","closeModal1")
+            div(class="row-flex")
+                div(class="col-center  xs12")
+                    P(class="ta-c" tabindex="0") #[b Agua] Tiene fórmula molecular H<sub>2</sub>O, es otro de los reactivos.
+        +modal("modal2","","","closeModal2")
+            div(class="row-flex")
+                div(class="col-center  xs12")
+                    p(tabindex="0") #[b Etanol] Es un alcohol y también es uno de los reactivos. Tiene fórmula molecular CH<sub>3</sub>CH<sub>2</sub>OH.
+        +modal("modal3","","","closeModal3")
+            div(class="row-flex")
+                div(class="col-center  xs12")
+                    p(tabindex="0") #[b R1] Es un reactivo, en este caso el halogenuro de alquilo llamado 6-cloro-2,6-dimetiloctano. Su estructura química es:
+                    +image("slide11_1.png")
+        +modal("modal4","","","closeModal4")
+            div(class="row-flex")
+                div(class="col-center  xs12")
+                    +image("slide11_9.png","Ecuación química de la reacción.","Imagen 15:")
+
+
+prepend _footer
+    -var prevPage = "10.slide.html"
+    -var nextPage = "12.slide.html"
+block script
+    link(rel="stylesheet" href="assets/library/slides/slides.css")
+    script(src="./assets/library/slides/slider.js")
+    script(src="assets/library/feedback/feedback.js")
+    script.
+        const myCallback = (objData) => {
+            let currentSlide = objData.currentSlide;
+            feedback.initialize({
+                bien: [
+                    '',
+                    'Porque el sustrato o halogenuro terciario se caracteriza porque el carbono al cual está unido el halógeno se une a otras dos cadenas carbonadas o grupos alquilo.',
+                    'Porque el sustrato o halogenuro es terciario; y al salir el halógeno como grupo saliente en los carbonos terciarios, la carga positiva que se forma en este puede estabilizarse con los otros carbonos que lo rodean.',
+                    'El agua actúa como nucleófilo y el etanol como solvente polar prótico. Dado que el agua es más polar que el etanol y está en una alta proporción, este permite una solvatación mayor al halogenuro de alquilo, logrando una mayor estabilización del carbocatión y su posterior sustitución.',
+                    'La reacción SN1 se favorece en sustratos terciarios y en solventes polares próticos como el etanol. Se descarta la SN2 porque el nucleófilo debe ser fuerte, pero en este caso el agua no lo es. Y no es E1 ni E2 porque el agua no es una base fuerte.',
+                    'La respuesta correcta es la a, dado que es una reacción SN1 donde se  tiene  como  solvente  polar  prótico el etanol, y el agua está en mayor proporción, por lo cual es el nucleófilo y formará el respectivo alcohol. La estructura química no pierde átomos de carbono como sucede en la estructura b y d, y la c no es, dado que forma un éter, y en este caso como ya se indicó, el etanol está en menor proporción y no es el nucleófilo.'
+                ],
+                mal:[
+                    '',
+                    'Siga intentando.',
+                    'Siga intentando.',
+                    'Siga intentando.',
+                    'Siga intentando.',
+                    'Siga intentando.'
+                ],
+                }, currentSlide);
+            const feedbBack = (respGame) => {
+                asnwerCorrect = document.getElementsByClassName('js-checkBox bien').length;
+                feedback.index = objData.index;
+                feedback.give(respGame.status);
+            }
+            ova.inputchecked(currentSlide, objData.index, ['',3,1,2,2,1], feedbBack);
+        };
+        slider.initialize(myCallback);
+        var modal1 = new ovaDialog("modal1")
+        modal1.addEventListeners(".openModal1", ".closeModal1");
+
+        var modal2 = new ovaDialog("modal2")
+        modal2.addEventListeners(".openModal2",".closeModal2");
+
+        var modal3 = new ovaDialog("modal3")
+        modal3.addEventListeners(".openModal3",".closeModal3");
+
+        var modal4 = new ovaDialog("modal4")
+        modal4.addEventListeners(".openModal4",".closeModal4");

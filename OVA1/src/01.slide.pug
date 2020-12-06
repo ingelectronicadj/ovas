@@ -1,0 +1,44 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[1].word
+block main
+    div(class="slide1")
+        +title('1', linkActive, 'slide1_1')
+        div(class="row-flex")
+            div(class="col xs12")
+                +audio2("slide1_2")(class="centrado")
+                span(class="c-content-video draggable-video" video-accesibility)
+                    +video('slide1-accesibility_2_drag', '', 2)(aria-hidden="true" controls="true")
+                +slider("Sección")
+
+                    +slidertabContent
+                        div(class="row-flex")
+                            div(class="col xs12")
+
+                            div(class="col xs12")
+                                +image("slide1_1.png")
+                    +slidertabContent
+                        div(class="row-flex")
+
+                            div(class="col xs12 sm12 md6 escructura")
+                                +image("slide1_1.gif","Estructura de la reacción de eliminación.","Animación 1:")
+                            div(class="col xs12 sm12 md6 escructura")
+                                +image("slide1_2.gif","Estructura de la reacción de adición al grupo alqueno.","Animación 2:")
+                    +slidertabContent
+                        div(class="row-flex")
+                            div(class="col xs12 sm12 md6 escructura")
+                                +image("slide1_3.gif","Estructura de la reacción de adición al grupo carbonilo.","Animación 3:")
+                            div(class="col xs12 sm12 md6 escructura")
+                                +image("slide1_4.gif","Estructura de la reacción de sustitución nucleofílica. ","Animación 4:")
+
+
+
+prepend _footer
+    -var prevPage = "index.html"
+    -var nextPage = "02.slide.html"
+block script
+    link(rel="stylesheet" href="assets/library/slides/slides.css")
+    script(src="./assets/library/slides/slider.js")
+    script.
+        slider.initialize();

@@ -1,0 +1,81 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[6].word
+
+block main
+    .slide6
+        +title('6', linkActive, 'slide6_1')
+        div(class="row-flex u-justify-center")
+            div(class="col xs9")
+                div(class="col xs12")
+
+                div(class="col xs12")
+                    p(tabindex="0") En esta reacción, el nucleófilo (base de Lewis, “rico en electrones”) reemplaza un átomo o grupo, denominado “grupo saliente”. Así el enlace carbono-halógeno del halogenuro de alquilo se rompe en forma heterolítica, es decir, que los dos electrones del enlace se pierden con el grupo saliente. La siguiente imagen representa la reacción general de sustitución nucleofílica.
+                    h6(class="ta-c" tabindex="0") Presione sobre la imagen para abrir mas información.
+                div(class="col xs12")
+                    button(class="open_modal1 btn-transparent" aria-label="Animación 7: Representación de una reacción de sustitución nucleofílica. Presione enter para más información.")
+                        +image("slide6_1.gif","Representación de una reacción de sustitución nucleofílica. ","Animación 7:" )(class="imageRepresentacion" tabindex="-1")
+                div(class="col xs12")
+                    p(tabindex="0") Hay dos tipos de mecanismos, que dependen de varios factores como el solvente, los grupos adyacentes, las etapas de la reacción y formación de intermediarios:
+                div(class="col xs5")
+                    button(class="open_modal3 btn-transparent" aria-label="Animación 8: Representación de una reacción de sustitución nucleofílica unimolecular. Presione enter para más información.")
+                        +image("slide6_3.gif","Representación de una reacción de sustitución nucleofílica unimolecular.","Animación 8:")(class="imageRepresentacion" tabindex="-1")
+                div(class="col xs5")
+                    button(class="open_modal2 btn-transparent" aria-label="Animación 9: Representación de una reacción de sustitución nucleofílica unimolecular. Presione enter para más información.")
+                        +image("slide6_2.gif","Representación de una reacción de sustitución nucleofílica unimolecular.","Animación 9:")(class=" imageRepresentacion" tabindex="-1")
+
+
+                +modal("modal1","","","close_modal1")
+                    div(class="row-flex")
+                        div(class="col xs12")
+                            p(tabindex="0") La reacción también se puede representar con líneas y cuñas en 2D, como se muestra a continuación: Imagen 5.
+                            +image("slide6_2.png","Representación de una reacción de sustitución nucleofílica en 2D.","Imagen 5:")
+            div(class="col xs3")
+                +audio2("slide6_2")(class="centrado" id="reproductor")
+                span(class="c-content-video draggable-video" video-accesibility)
+                    +video('slide6-accesibility_2_drag', '', 7)(aria-hidden="true" controls="true")
+                +image("slide6_6.gif")(class="hidden" id="imagenGif")
+                +image("slide6_6.png","avatar moviendo la mano simulando una explicación.","Animación 10:")(class="" id="imagenPng")
+
+        +modal("modal2","","","close_modal2")
+            div(class="row-flex")
+                div(class="col xs12")
+                    p(tabindex="0") La reacción se da en dos pasos: P1. El grupo saliente sale y se forma un carbocatión. P2. Se da la adición del nucleófilo, -OH. La reacción se favorece en halogenuros de alquilo terciarios y solventes próticos. La reacción también se puede representar con líneas y cuñas, como se muestra a continuación: Imagen 6.
+                    +image("slide6_3.png","Representación de una reacción de sustitución nucleofílica unimolecular en 2D.","Imagen 6:")
+        +modal("modal3","","","close_modal3")
+            div(class="row-flex")
+                div(class="col xs12")
+                    p(tabindex="0") La reacción se da de forma concertada; donde se da la adición del nucleófilo y la eliminación del grupo saliente, al mismo tiempo. La reacción se favorece en halogenuros de alquilo primarios y solventes apróticos. La reacción también se puede representar con líneas y cuñas, como se muestra a continuación:
+                    +image("slide6_4.png","Representación de una reacción de sustitución nucleofílica unimolecular en 2D.","Imagen 7:")
+
+
+prepend _footer
+    -var prevPage = "05.slide.html"
+    -var nextPage = "07.slide.html"
+block script
+    script.
+      var dialogModal1 = new ovaDialog('modal1');
+      dialogModal1.addEventListeners('.open_modal1','.close_modal1');
+      var dialogModal1 = new ovaDialog('modal2');
+      dialogModal1.addEventListeners('.open_modal2','.close_modal2');
+      var dialogModal1 = new ovaDialog('modal3');
+      dialogModal1.addEventListeners('.open_modal3','.close_modal3');
+
+
+        reproductor.addEventListener("play", function(){
+            imagenPng.classList.add("hidden");
+            imagenGif.classList.remove("hidden");
+
+        });
+        reproductor.addEventListener("pause", function(){
+            imagenPng.classList.remove("hidden");
+            imagenGif.classList.add("hidden");
+
+        });
+        reproductor.addEventListener("ended", function(){
+            imagenPng.classList.remove("hidden");
+            imagenGif.classList.add("hidden");
+
+        });
+

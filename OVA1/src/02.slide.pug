@@ -1,0 +1,25 @@
+extends ../../../app/pug/index
+prepend config
+    include _setMenu
+    -var linkActive = content[2].word
+block main
+    +title('2', linkActive, 'slide2_1')
+    div(class="row-flex u-align-items-center")
+        div(class="col xs12")
+            +audio2("slide2_2")(class="centrado")#audioFile
+            span(class="c-content-video draggable-video" video-accesibility)
+                +video('slide2-accesibility_2_drag', '', 2)(aria-hidden="true" controls="true")
+        div(class="col xs12 sm6")
+            +image("slide2_1.png", "Libro abierto junto a una mano que sostiene un lapiz.","Animación 5:")(id="imgFile")
+            img(src="assets/images/slide2_1.gif" class="hidden")
+        div(class="col xs12 sm6")
+            p(tabindex="0") “Objetivo: Diferenciar las reacciones químicas de sustitución, eliminación y adición; a través del estudio de conceptos teóricos y ejercicios prácticos que permitan su aplicación en la predicción de reactivos y productos en casos de estudio.”
+
+prepend _footer
+    -var prevPage = "01.slide.html"
+    -var nextPage = "03.slide.html"
+
+block script
+    script.
+        audioFile.addEventListener('play', ()=> imgFile.src = "assets/images/slide2_1.gif")
+        audioFile.addEventListener('pause', ()=> imgFile.src = "assets/images/slide2_1.png")
