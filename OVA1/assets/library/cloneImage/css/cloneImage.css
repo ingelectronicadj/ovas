@@ -1,0 +1,202 @@
+:root {
+    --minHeightGridGallery: 220px;
+    --minHeightlayoutHeader: 3rem;
+    --color_2-lighter: #cfe8e7;
+    --color_2-light: #87c5bf;
+    --color_2: #36b1a3;
+    --color_2-dark: #6aa199;
+    --color_2-darker: #22645b;
+}
+
+/* html {
+    font-size: 16px;
+}
+
+html,
+body,
+.homeImage {
+    margin: 0;
+    padding: 0;
+} */
+
+/*
+body.desarrollo [class^='c-'],
+body.desarrollo [class^='o-'],
+body.desarrollo [class*='c-'],
+body.desarrollo [class*='o-'] {
+    box-shadow: 0 0 1px 0 tomato;
+}
+
+body.desarrollo [class^='o-']::before,
+body.desarrollo [class*='o-']::before {
+    box-shadow: 0 0 1px 0 lightblue;
+    content: attr(class);
+    background-color: lightgray;
+    opacity: 0.7;
+} */
+
+.o-layout_content {
+    width: 100%;
+    margin: auto;
+}
+
+/*
+
+.o-layout_header {
+    width: 100%;
+    min-height: var(--minHeightlayoutHeader);
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.c-btn {
+    background-color: #fff;
+    color: var(--color_2);
+    min-height: 4rem;
+    margin-right: 0.5rem;
+    border: none;
+}
+
+.c-navigation {
+    margin: auto;
+}
+
+.c-navigation_menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+} */
+
+.c-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--minHeightGridGallery), 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(var(--minHeightGridGallery), 1fr));
+    grid-auto-rows: var(--minHeightGridGallery);
+    grid-gap: 0.5rem;
+    padding: 0;
+}
+
+.c-gallery-item {
+    list-style: none;
+    /* background-color: rgba(255, 99, 71, 0.4); */
+    min-height: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+.c-gallery-image {
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.game-selectPlace--item {
+    display: flex;
+    align-items: flex-end;
+}
+
+.game-selectPlace--item a {
+    width: 100%;
+    height: 100%;
+}
+
+.game-selectPlace--item::before {
+    content: 'Presione aquí para seleccionar la imagen correcta.';
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color_2-dark);
+    font-size: 1rem;
+    text-align: center;
+    user-select: none;
+    pointer-events: none;
+}
+
+.game-selectPlace--item::after {
+    content: attr(texto);
+    width: 100%;
+    height: auto;
+    min-height: 2rem;
+    padding-top: 0.5em;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    user-select: none;
+    pointer-events: none;
+    text-align: center;
+}
+
+.game-selectPlace--item.is-good::before,
+.game-selectPlace--item.is-wrong::before {
+    z-index: 3;
+    color: var(--theme-body-txt);
+    text-shadow: 1px 0 0px var(--theme-body-bg), -1px 0 0px var(--theme-body-bg),
+        0 -1px 0px var(--theme-body-bg), 0 1px 0px var(--theme-body-bg);
+    font-size: 45px;
+}
+
+.game-selectPlace--item.is-good::before {
+    content: 'Correcto :)';
+    background-color: rgba(0, 128, 0, 0.3) !important;
+}
+
+.game-selectPlace--item.is-wrong::before {
+    content: 'Incorrecto :(';
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.game-selectPlace--image {
+    position: absolute;
+    z-index: 1;
+}
+
+.is-hidden {
+    opacity: 0;
+    display: none;
+}
+
+.no-active {
+    background-color: var(--color_2-lighter) !important;
+}
+
+.is-good {
+    box-shadow: 0 0 2px 1px var(--color_2-lighter);
+}
+
+.is-wrong {
+    box-shadow: 0 0 2px 1px tomato;
+}
+
+[display='flex'] {
+    display: flex;
+}
+
+[flex-justify='around'] {
+    justify-content: space-around;
+}
+
+[flex-justify='between'] {
+    justify-content: space-between;
+}
+
+.u-maxwidth-800 {
+    max-width: 800px;
+}
+
+.u-header_minHeight {
+    min-height: var(--minHeightlayoutHeader);
+}
+
+.u-col-center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}

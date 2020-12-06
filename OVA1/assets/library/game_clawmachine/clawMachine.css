@@ -1,0 +1,220 @@
+.info-container {
+    left: 2%;
+    width: 15%;
+    min-width: 284px;
+    height: 610px;
+    position: relative;
+    margin: 1% 0px 1% 0px;
+    border: 2px solid #002e47;
+    border-radius: 15px;
+}
+
+.claw-container {
+    position: relative;
+    margin: 1% 1% 1% 1%;
+    width: 47%;
+    left: 2%;
+    min-width: 860px;
+    min-height: 610px;
+    height: 56%;
+    border: 2px solid #002e47;
+    border-radius: 15px;
+}
+
+.claw-machine {
+    position: relative;
+    margin: 1% 1% 1% 1%;
+    width: 98%;
+    min-width: 844px;
+    min-height: 440px;
+    height: 98%;
+    background-image: url('../../images/slide10_13.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.claw-grab {
+    position: absolute;
+    /* width: 23%; */
+    width: 19.7%;
+    min-width: 195px;
+    height: 50%;
+    background-image: url('../../images/slide10_11.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 1;
+    left: 24%;
+}
+
+.ui-machine {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background-image: url('../../images/slide10_1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.area {
+    display: flex;
+}
+
+.item-container {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+}
+.lever {
+    width: 90px;
+    height: 150px;
+    top: -25%;
+    position: absolute;
+    left: 45%;
+}
+.top-lever {
+    position: absolute;
+    width: 90px;
+    height: 130px;
+    background-image: url('../../images/slide10_3.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.base-lever {
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    background-image: url('../../images/slide10_6.png');
+    top: 75%;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.control-container {
+    width: 250px;
+    height: 60px;
+    left: 7%;
+    top: 86%;
+    position: absolute;
+    transform: skew(-20deg, 0deg);
+}
+
+.out-container {
+    width: 225px;
+    height: 60px;
+    position: absolute;
+    left: 37%;
+    top: 86%;
+    transform: skew(-20deg, 0deg);
+}
+
+.left-grab {
+    background-image: url('../../images/slide10_10.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    width: 68px;
+    height: 27px;
+    left: 373px;
+    top: 57px;
+}
+
+.foward-grab {
+    background-image: url('../../images/slide10_6.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 93px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    top: 22px;
+    left: 409px;
+}
+
+.backward-grab {
+    background-image: url('../../images/slide10_8.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 35px;
+    bottom: 28px;
+    left: 430px;
+}
+
+.right-grab {
+    width: 68px;
+    height: 27px;
+    background-image: url('../../images/slide10_4.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    right: 318px;
+    top: 56px;
+    background-color: transparent;
+}
+
+.action-grab {
+    width: 140px;
+    height: 71px;
+    background-image: url('../../images/slide10_2.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    bottom: 35px;
+    right: 5%;
+}
+
+.coin-container {
+    width: 214px;
+    height: 80px;
+    background-image: url('../../images/slide10_7.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    bottom: 34px;
+    left: 5%;
+}
+
+.coin-value {
+    left: 102px;
+    font-size: xx-large;
+    position: absolute;
+    top: 15px;
+}

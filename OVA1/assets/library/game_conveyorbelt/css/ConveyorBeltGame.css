@@ -1,0 +1,249 @@
+.area {
+    display: flex;
+}
+
+.info-container {
+    left: 1%;
+    width: 15%;
+    min-width: 400px;
+    height: 550px;
+    position: relative;
+    margin: 1% 0px 1% 0px;
+    border: 2px solid #002e47;
+    border-radius: 15px;
+}
+
+.description-container {
+    width: 98%;
+    height: 35%;
+    margin: 1% 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+
+.clasification-container {
+    width: 98%;
+    height: 46%;
+    margin: 2% 1%;
+    border: 2px solid #002e47;
+}
+
+.info-button-container {
+    width: 98%;
+    height: 14%;
+    margin: 2% 1%;
+    padding: 6% 34%;
+}
+
+.game-container {
+    position: relative;
+    margin: 1% 1% 1% 1%;
+    width: 47%;
+    left: 1%;
+    min-width: 760px;
+    min-height: 550px;
+    height: 56%;
+    border: 2px solid #002e47;
+    border-radius: 15px;
+}
+
+.score-container {
+    position: relative;
+    margin: 1%;
+    width: 50%;
+    border: 2px solid #002e47;
+}
+
+.belt {
+    width: 98%;
+    margin: 1%;
+    height: 50%;
+    top: 90px;
+    position: relative;
+    background-image: url('../../../images/slide7_1.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.selector-button {
+    border: none;
+    font-size: 20px;
+    padding: 22px 22px;
+    text-align: center;
+    margin: 5px 15px;
+    background-color: #cd6155;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    content: none;
+}
+
+.title-p {
+    position: absolute;
+    background-color: #002e47;
+    color: #fefefe;
+    width: 97%;
+    height: 40px;
+    text-align: center;
+    padding: 1%;
+}
+
+.clasification-button-container {
+    top: 45px;
+    position: relative;
+    width: 20%;
+}
+.clasification-description-container {
+    width: 80%;
+    height: 77%;
+    left: 20%;
+    position: relative;
+    bottom: 61%;
+}
+
+.button-description {
+    position: relative;
+    left: 5%;
+    padding: 5px 0px;
+}
+
+.help-button {
+    border: none;
+    font-size: 16px;
+    padding: 22px 22px;
+    text-align: center;
+    margin: 5px 15px;
+    background-color: #52be80;
+    display: block;
+    border-radius: 50%;
+}
+
+.score-div {
+    background-color: #d0d3d4;
+    width: 30%;
+    height: 40px;
+    margin: 0% 1%;
+    margin-bottom: 3%;
+    left: 2%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 2%;
+}
+
+.score-control-title {
+    width: 30%;
+    height: 30px;
+    display: inline-block;
+    margin: 0% 1%;
+    left: 2%;
+    position: relative;
+    text-align: center;
+}
+
+.score-control-maintitle {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 3%;
+    text-align: center;
+    padding: 4%;
+    background-color: #002e47;
+}
+.item {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 232px;
+    height: 112px;
+    top: -40px;
+    position: absolute;
+}
+
+.score-control {
+    height: 130px;
+    width: 25%;
+    left: 20%;
+    background-color: rgba(249, 231, 159, 1);
+    position: absolute;
+}
+
+button:disabled,
+button[disabled] {
+    background-color: #cccccc;
+}
+
+.clasification-description-container .popuptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 125px;
+    left: 30%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.clasification-description-container .popuptext::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-left: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.clasification-description-container .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.buttons-container {
+    left: 46%;
+    position: relative;
+}
+
+.button-align {
+    margin-left: 2%;
+}
+
+.p-center-align {
+    text-align: center;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

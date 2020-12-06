@@ -1,0 +1,202 @@
+.treeItem,
+.treeItem_hi,
+.treeItem_set {
+    min-height: 2.5rem;
+    margin-bottom: 10px;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0.5rem;
+    min-height: 3.5rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 3px solid #3e9ed0;
+    border-radius: 5px;
+    background-color: #89cff3;
+    color: black;
+    text-align: center;
+}
+
+[data-ejercicio='unir'] {
+    display: flex;
+}
+
+[data-ejercicio='unir']::before,
+[data-ejercicio='unir']::after {
+    display: none;
+}
+
+[data-ejercicio='unir'] > * {
+    margin-bottom: 20px;
+}
+
+[data-ejercicio='unir'] > *:nth-child(1) {
+    width: 100%;
+    max-width: 45%;
+}
+
+[data-ejercicio='unir'] > *:nth-child(2) {
+    position: relative;
+    min-width: 60px;
+}
+
+[data-ejercicio='unir'] > *:nth-child(3) {
+    width: 100%;
+    max-width: 45%;
+}
+
+[data-ejercicio='unir'] > *:last-child {
+    margin-bottom: initial;
+}
+
+.treeItem[correcta='bien']::before,
+.treeItem[correcta='mal']::before {
+    content: 'x';
+    position: absolute;
+    font-family: material-icon;
+    left: -9px;
+    top: -14px;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.treeItem[correcta='mal']::before {
+    background: rgba(198, 78, 90, 0.8) !important;
+    border: 3px solid #dc2e2e !important;
+}
+
+.treeItem[correcta='bien']::before {
+    background: rgba(23, 162, 41, 0.8) !important;
+    border: 3px solid #07710f !important;
+}
+
+.treeItem.treeImg,
+.treeItem_hi.treeImg,
+.treeItem_set.treeImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.treeItem_hi {
+    color: #0e0e0e !important;
+    background: #feca57 !important;
+    border: 3px solid #ff9800 !important;
+    border-radius: 5px;
+}
+
+.treeItem_set {
+    background: #7f8fa6 !important;
+    border: 3px solid #383f42 !important;
+    color: white;
+}
+
+.treeItem[correcta='bien'],
+.treeItem_hi[correcta='bien'],
+.treeItem_set[correcta='bien'],
+.treeItem_hi[correcta='bien'],
+.treeItem_set[correcta='bien'] {
+    background: rgba(23, 162, 41, 0.8) !important;
+    border: 3px solid #07710f !important;
+    color: white;
+}
+
+.treeItem[correcta='bien']::before {
+    content: 's';
+    background-color: #1ca11c !important;
+    border: 3px solid #07710f !important;
+}
+.treeItem[correcta='mal']::before {
+    content: 'x';
+    border: 3px solid #cf0404 !important;
+    background-color: #ff3019 !important;
+}
+
+.treeItem[correcta]::before,
+.treeItem_hi[correcta]::before,
+.treeItem_set[correcta]::before,
+.treeItem_hi[correcta]::before {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    color: white;
+    font-family: material-icon;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.treeItem[correcta='mal'],
+.treeItem_hi[correcta='mal'],
+.treeItem_set[correcta='mal'],
+.treeItem_hi[correcta='mal'],
+.treeItem_set[correcta='mal'] {
+    background: rgba(198, 78, 90, 0.8) !important;
+    border: 3px solid #dc2e2e;
+    color: white;
+}
+
+.treeItem[jsblock='jsblock'],
+.treeItem_hi[jsblock='jsblock'],
+.treeItem_set[jsblock='jsblock'] {
+    cursor: no-drop;
+    pointer-events: none;
+}
+
+.treeItem[jsblock='jsblock'] span,
+.treeItem_hi[jsblock='jsblock'] span,
+.treeItem_set[jsblock='jsblock'] span,
+.treeItem span,
+.treeItem_hi span,
+.treeItem_set span {
+    pointer-events: none;
+    color: white;
+}
+.c-figure {
+    pointer-events: none;
+}
+
+.gameJoinColumns .gameUnir {
+    display: grid;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    grid-template-areas: 'sourceElements linecanvas targetElements' 'btn_ btn_ btn_';
+    grid-template-columns: 40% auto 40%;
+    grid-template-rows: minmax(400px, auto) minmax(auto, auto);
+}
+.gameJoinColumns .gameUnir .js-columnas {
+    justify-self: center;
+    max-width: 100%;
+}
+.gameJoinColumns .gameUnir .btns_game {
+    grid-area: btn_;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.gameJoinColumns .gameUnir .btns_game .c-btn_default {
+    min-width: 120px;
+    color: #ffffff;
+    margin: 0;
+}

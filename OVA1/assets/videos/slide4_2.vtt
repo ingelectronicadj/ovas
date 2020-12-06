@@ -1,0 +1,497 @@
+WEBVTT
+
+1
+00:00:00.541 --> 00:00:02.625
+La química es un lenguaje,
+
+2
+00:00:03.000 --> 00:00:07.333
+ y como tal tiene elementos y símbolos que permiten representar
+
+3
+00:00:07.541 --> 00:00:10.458
+ las estructuras y/o reacciones químicas
+
+4
+00:00:10.541 --> 00:00:12.833
+ para dar un significado o mensaje.
+
+5
+00:00:13.708 --> 00:00:16.958
+ Estas representaciones se pueden hacer a mano alzada,
+
+6
+00:00:17.250 --> 00:00:20.625
+ y actualmente se tienen herramientas online gratis
+
+7
+00:00:20.625 --> 00:00:23.666
+ que permiten visualizar en 2D y 3D
+
+8
+00:00:23.875 --> 00:00:27.875
+ las estructuras para identificar de forma clara los enlaces
+
+9
+00:00:27.875 --> 00:00:30.416
+ y distribución espacial de los átomos.
+
+10
+00:00:31.041 --> 00:00:33.625
+ En este apartado se muestra paso a paso
+
+11
+00:00:33.625 --> 00:00:36.208
+ como construir esta estructura química.
+
+12
+00:00:37.791 --> 00:00:38.916
+ Paso 1.
+
+13
+00:00:39.333 --> 00:00:42.416
+ Buscar y abrir el sitio web:  https://chemdrawdirect.perkinelmer.cloud/js/sample/index.html
+
+14
+00:00:43.291 --> 00:00:47.166
+ o buscar como ChemDraw JS Sample Page.
+
+15
+00:00:47.666 --> 00:00:49.458
+ Adicional a este recurso,
+
+16
+00:00:49.500 --> 00:00:52.541
+ también se recomienda el sitio https://www.mn-am.com/online_demos/corina_demo_interactive
+
+17
+00:00:53.000 --> 00:00:56.291
+ para desarrollar y visualizar estructuras en 3D.
+
+18
+00:00:59.583 --> 00:01:00.791
+ Paso 2.
+
+19
+00:01:01.208 --> 00:01:03.750
+ Identificar los elementos que se encuentran
+
+20
+00:01:03.750 --> 00:01:05.833
+ en la parte superior de la página.
+
+21
+00:01:06.125 --> 00:01:09.208
+ En la imagen se observa los principales elementos
+
+22
+00:01:09.208 --> 00:01:12.375
+ que se utilizan para dibujar estructuras químicas.
+
+23
+00:01:12.750 --> 00:01:14.416
+ Es importante tener en cuenta
+
+24
+00:01:14.416 --> 00:01:18.208
+ que alguna iconografía será común en herramientas similares,
+
+25
+00:01:18.666 --> 00:01:23.541
+ por ello los invitamos a conocer e identificar los íconos más comunes.
+
+
+26
+00:01:23.958 --> 00:01:25.625
+ -Herramientas de selección
+
+27
+00:01:25.791 --> 00:01:26.750
+ -Borrador
+
+28
+00:01:27.083 --> 00:01:27.833
+ -Texto
+
+29
+00:01:28.000 --> 00:01:31.041
+ -Herramienta de cadenas de carbono no cíclicos
+
+30
+00:01:31.416 --> 00:01:32.291
+ -Flechas
+
+31
+00:01:32.500 --> 00:01:34.791
+ -Enlace sólido o en el plano
+
+32
+00:01:35.125 --> 00:01:38.791
+ -Enlace en cuña que indica una unión detrás del plano
+
+
+33
+00:01:39.136 --> 00:01:42.166
+ -Enlaces múltiples (doble, triple)
+
+34
+00:01:42.600 --> 00:01:46.625
+ -Enlace en cuña sólido que indica una unión delante del plano
+
+35
+00:01:47.033 --> 00:01:50.958
+ - Enlace en cuña vacía que indica una unión delante del plano
+
+36
+00:01:51.541 --> 00:01:54.000
+ -Cicloalcanos como ciclopropano,
+
+37
+00:01:54.331 --> 00:01:55.500
+ ciclobutano,
+
+38
+00:01:55.662 --> 00:01:56.750
+ ciclopentano,
+
+39
+00:01:57.220 --> 00:01:58.458
+ ciclohexano,
+
+40
+00:01:58.716 --> 00:01:59.958
+ cicloheptano,
+
+41
+00:02:00.093 --> 00:02:01.250
+ ciclooctano.
+
+42
+00:02:01.931 --> 00:02:03.833
+ -Ciclohexano tiposilla
+
+43
+00:02:04.101 --> 00:02:05.000
+ -Benceno
+
+44
+00:02:05.262 --> 00:02:06.625
+ -Ciclopentadieno
+
+45
+00:02:07.597 --> 00:02:08.458
+ Ahora bien,
+
+46
+00:02:08.655 --> 00:02:10.458
+ en la herramienta que se propone,
+
+47
+00:02:10.662 --> 00:02:14.291
+ encontraremos la iconografía en la parte superior de la página.
+
+48
+00:02:14.831 --> 00:02:17.583
+ Por ello, antes de continuar con el paso 3
+
+49
+00:02:17.877 --> 00:02:21.625
+ debe identificar los elementos mencionados anteriormente.
+
+50
+00:02:22.468 --> 00:02:23.666
+ Paso 3.
+
+51
+00:02:24.201 --> 00:02:27.333
+ Para dibujar la estructura que se presenta como ejemplo,
+
+52
+00:02:27.575 --> 00:02:30.041
+ identificamos los elementos necesarios,
+
+53
+00:02:30.522 --> 00:02:32.291
+ Seleccionamos el benceno
+
+54
+00:02:32.318 --> 00:02:35.375
+ y damos clic sobre la parte blanca de la pantalla,
+
+55
+00:02:35.801 --> 00:02:38.083
+ y allí aparece el benceno dibujado.
+
+56
+00:02:38.716 --> 00:02:40.791
+ Ahora dibujamos las líneas.
+
+57
+00:02:41.047 --> 00:02:44.291
+ Para ello, se selecciona el ícono de Enlace sólido,
+
+58
+00:02:44.508 --> 00:02:47.833
+ y se ubica en el carbono al cual se quiere unir la línea
+
+59
+00:02:47.854 --> 00:02:49.458
+ o líneas, dando clic.
+
+60
+00:02:50.238 --> 00:02:53.083
+ Recuerde que cuando se tienen varias líneas unidas,
+
+61
+00:02:53.455 --> 00:02:56.708
+ estas representan átomos de carbono unidos.
+
+62
+00:02:57.875 --> 00:03:00.125
+ Finalmente, escribimos el texto
+
+63
+00:03:00.125 --> 00:03:01.750
+ o letras que corresponda,
+
+64
+00:03:02.029 --> 00:03:04.916
+ por ejemplo, Cl representa el cloro,
+
+65
+00:03:05.645 --> 00:03:08.416
+ OH representa el grupo hidroxilo.
+
+66
+00:03:09.072 --> 00:03:11.791
+ Para ello damos clic en el ícono de texto.
+
+67
+00:03:12.086 --> 00:03:15.458
+ Nos ubicamos sobre el lugar donde queremos insertar el texto
+
+68
+00:03:15.725 --> 00:03:17.291
+ y escribimos las letras.
+
+69
+00:03:17.812 --> 00:03:20.416
+ Y así obtenemos la estructura química
+
+70
+00:03:20.416 --> 00:03:21.833
+ del compuesto llamado
+
+71
+00:03:22.181 --> 00:03:25.708
+ 3-cloro-6-etil-1-hidroxibenceno.
+
+72
+00:03:26.608 --> 00:03:27.541
+ Ahora bien,
+
+73
+00:03:27.962 --> 00:03:31.083
+ ya sabemos dibujar una estructura química simple.
+
+74
+00:03:31.522 --> 00:03:34.416
+ Vamos a representar las reacciones químicas,
+
+75
+00:03:34.933 --> 00:03:38.250
+ para ello seleccionemos la reacción que se presenta.
+
+
+76
+00:03:38.993 --> 00:03:40.083
+ Paso 1.
+
+77
+00:03:40.668 --> 00:03:43.958
+ La reacción presenta dos estructuras químicas,
+
+78
+00:03:44.262 --> 00:03:47.916
+ iniciaremos dibujando los reactivos y la flecha,
+
+79
+00:03:48.261 --> 00:03:50.000
+ para ello procedemos así:
+
+
+80
+00:03:50.670 --> 00:03:52.333
+ Seleccionamos el benceno
+
+81
+00:03:52.333 --> 00:03:55.416
+ y damos clic sobre la parte blanca de la pantalla,
+
+82
+00:03:55.698 --> 00:03:58.083
+ y allí aparece el benceno dibujado.
+
+83
+00:03:58.645 --> 00:04:02.555
+ Ahora dibujamos la línea que une al grupo hidroxilo
+
+84
+00:04:02.555 --> 00:04:03.333
+ (OH).
+
+85
+00:04:03.897 --> 00:04:07.166
+ Para ello, se selecciona el ícono de Enlace sólido,
+
+86
+00:04:07.444 --> 00:04:11.458
+ y se ubica en el carbono al cual se quiere unir la línea,
+
+87
+00:04:11.483 --> 00:04:12.441
+ dando clic.
+
+88
+00:04:13.336 --> 00:04:17.291
+ Finalmente, escribimos el texto o letras que corresponda,
+
+89
+00:04:17.666 --> 00:04:18.625
+ por ejemplo,
+
+90
+00:04:18.890 --> 00:04:19.666
+ OH
+
+91
+00:04:19.666 --> 00:04:21.541
+ representa el grupo hidroxilo.
+
+92
+00:04:22.161 --> 00:04:25.208
+ Para ello damos click en el ícono de texto,
+
+93
+00:04:25.536 --> 00:04:29.041
+ nos ubicamos sobre el lugar donde queremos insertar el texto
+
+94
+00:04:29.230 --> 00:04:30.791
+ y escribimos las letras.
+
+95
+00:04:31.394 --> 00:04:33.833
+ Y así obtenemos la estructura química
+
+96
+00:04:33.833 --> 00:04:35.958
+ del compuesto llamado fenol.
+
+97
+00:04:37.187 --> 00:04:38.916
+ Continuando con la reacción,
+
+98
+00:04:38.916 --> 00:04:41.041
+ seleccionamos el ícono de flecha
+
+99
+00:04:41.062 --> 00:04:44.416
+ y damos clic sobre el lugar donde queremos poner la flecha.
+
+100
+00:04:44.993 --> 00:04:48.958
+ Luego sobre la flecha escribimos NaOH
+
+101
+00:04:49.311 --> 00:04:51.708
+ haciendo uso del ícono texto,
+
+102
+00:04:51.972 --> 00:04:54.208
+ y así completamos los reactivos.
+
+103
+00:04:54.930 --> 00:04:56.708
+ Para representar los productos,
+
+104
+00:04:56.708 --> 00:04:59.291
+ podemos hacer uso de la herramienta de selección.
+
+105
+00:04:59.833 --> 00:05:02.833
+ Seleccionamos el fenol y damos copiar y pegar.
+
+106
+00:05:03.333 --> 00:05:05.416
+ Arrastramos la estructura del fenol
+
+107
+00:05:05.416 --> 00:05:07.208
+ hasta el lado de los productos.
+
+108
+00:05:07.661 --> 00:05:10.166
+ Luego damos clic en el ícono de texto,
+
+109
+00:05:10.533 --> 00:05:12.625
+ nos ubicamos en la letra OH
+
+110
+00:05:12.826 --> 00:05:16.833
+ y la reemplazamos por O-Na+.
+
+111
+00:05:17.494 --> 00:05:18.958
+ Completamos la reacción
+
+112
+00:05:18.958 --> 00:05:21.500
+ escribiendo con la ayuda del ícolo texto,
+
+113
+00:05:21.938 --> 00:05:23.625
+ el resto de los productos,
+
+114
+00:05:23.625 --> 00:05:26.833
+ que en este caso se escribe un más (+)
+
+115
+00:05:27.163 --> 00:05:29.416
+ que indica más otro producto,
+
+116
+00:05:29.833 --> 00:05:33.208
+ el cual es agua (H2O) en este caso.
+
+117
+00:05:34.213 --> 00:05:37.416
+ En el agua debemos escribir el 2 del agua
+
+118
+00:05:37.416 --> 00:05:38.666
+ como subíndice,
+
+119
+00:05:39.137 --> 00:05:42.416
+ para ello hacemos uso del ícono X2.
+
+120
+00:05:43.129 --> 00:05:45.250
+ Y así, se completa la reacción
+
+121
+00:05:45.250 --> 00:05:48.083
+ que representa la formación de la sal del fenol
+
+122
+00:05:48.376 --> 00:05:49.791
+ (fenóxido de sodio)
+
+123
+00:05:50.201 --> 00:05:52.833
+ por medio de una reacción ácido-base.

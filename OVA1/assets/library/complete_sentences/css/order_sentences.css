@@ -1,0 +1,67 @@
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buttonOptions {
+    background: #ffffff;
+    border: 2px solid #3f51b5 !important;
+    border-radius: 11px;
+    font-size: 17px;
+    margin: 5px;
+    min-width: 45px;
+    padding: 5px;
+    cursor: pointer;
+}
+.fieldResponse {
+    border: 2px solid #3f4b4c;
+    border-radius: 6px;
+    padding: 5px;
+    background: #c3c3c3;
+    text-align: center;
+    min-height: 45px;
+    margin: 20px;
+}
+
+.bien {
+    border: 2px solid #2ed573;
+    background: #7bed9f;
+    border-radius: 11px;
+    padding: 5px;
+    text-align: center;
+}
+
+.bien::before,
+.mal::before {
+    position: absolute;
+    font-family: material-icon;
+    left: 60px;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bien::before {
+    content: 's';
+    background-color: #1ca11c;
+    box-shadow: 0 0 0 2px #07710f;
+}
+.mal {
+    border: 2px solid #ff4757;
+    background: #ff6b81;
+    border-radius: 11px;
+    padding: 5px;
+    text-align: center;
+}
+.mal::before {
+    content: 'x';
+    box-shadow: 0 0 0 2px #cf0404;
+    background-color: #ff3019;
+}
