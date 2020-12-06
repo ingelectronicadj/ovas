@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<manifest identifier="eXescrom5c40b7802457adf17f5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3" xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3" xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3" xmlns:imsss="http://www.imsglobal.org/xsd/imsss" xmlns:lom="http://ltsc.ieee.org/xsd/LOM" xmlns:lomes="http://ltsc.ieee.org/xsd/LOM" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd http://ltsc.ieee.org/xsd/LOM lomCustom.xsd http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd  http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd  http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>2004 3rd Edition</schemaversion>
+    <adlcp:location>imslrm.xml</adlcp:location>
+  </metadata>
+  <resources>
+    <resource identifier="RES-index" type="webcontent" adlcp:scormType="sco" href="index.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-01.slide" type="webcontent" adlcp:scormType="sco" href="01.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-02.slide" type="webcontent" adlcp:scormType="sco" href="02.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-03.slide" type="webcontent" adlcp:scormType="sco" href="03.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-04.slide" type="webcontent" adlcp:scormType="sco" href="04.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-05.slide" type="webcontent" adlcp:scormType="sco" href="05.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-06.slide" type="webcontent" adlcp:scormType="sco" href="06.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-07.slide" type="webcontent" adlcp:scormType="sco" href="07.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-08.slide" type="webcontent" adlcp:scormType="sco" href="08.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-09.slide" type="webcontent" adlcp:scormType="sco" href="09.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-10.slide" type="webcontent" adlcp:scormType="sco" href="10.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-11.slide" type="webcontent" adlcp:scormType="sco" href="11.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-12.slide" type="webcontent" adlcp:scormType="sco" href="12.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+    <resource identifier="RES-13.slide" type="webcontent" adlcp:scormType="sco" href="13.slide.html">
+      <dependecy identifierref="COMMON_FILES"/>
+    </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormType="asset">
+      <file href="index.css"/>
+      <file2 href="index.js"/>
+    </resource>
+  </resources>
+</manifest>
